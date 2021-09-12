@@ -1,0 +1,23 @@
+.spinbox {
+  width: 100px;
+  user-select: none;
+}
+
+.spinbox div:first-child,
+.spinbox div:last-child {
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.spinbox div:first-child:hover,
+.spinbox div:last-child:hover {
+  background: #bed49f;
+}
+
+.card-text{
+  color: #01551B !important;
+}
+
+.border-radius-start{
+  border-top-left-radius
+}

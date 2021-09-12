@@ -1,0 +1,10 @@
+footer {
+    background: #aeca87 !important;
+  }
+
+  /* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+    a[href="tel:+84984018891"] {
+      border-bottom: none !important;
+    }
+  }

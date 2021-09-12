@@ -1,0 +1,15 @@
+{
+  "short_name": "Yummy",
+  "name": "Fast Food - Fast Service - Good Price",
+  "icons": [
+    {
+      "src": "fav.png",
+      "sizes": "64x70",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
