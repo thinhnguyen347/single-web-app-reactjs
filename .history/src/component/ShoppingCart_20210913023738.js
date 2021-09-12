@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { BrowserRouter as Switch, Route, Link } from "react-router-dom";
 import MainContent from "./ShoppingCartItem";
 import Menu from "./Menu";
-import Home from "./HomeContent";
 import { addedItems } from "./data-cart";
 
 export default function ShoppingCart() {
@@ -60,14 +59,14 @@ export default function ShoppingCart() {
       <nav aria-label="breadcrumb" className="ms-4 ms-lg-5 py-3">
         <ol className="breadcrumb">
           <li className="breadcrumb-item">
-            <Link to="/" className="text-dark text-decoration-none">
+            <a href="/" className="text-dark text-decoration-none">
               Trang chủ
-            </Link>
+            </a>
           </li>
           <li className="breadcrumb-item ">
-            <Link to="/menu" className="text-dark text-decoration-none">
+          <Link to="/menu" className="text-dark text-decoration-none">
               Thực đơn
-            </Link>
+            </a></Link
           </li>
           <li className="breadcrumb-item active" aria-current="page">
             Giỏ hàng
@@ -172,9 +171,6 @@ export default function ShoppingCart() {
       <Switch>
         <Route path="/menu">
           <Menu />
-        </Route>
-        <Route path="/">
-          <Home />
         </Route>
       </Switch>
     </>

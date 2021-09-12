@@ -105,8 +105,8 @@ export default function Home() {
             </div>
           </div>
         </Route>
-        
-        <Route path="./:slug">
+
+        <Route path="./">
           <FoodDetails />
         </Route>
       </Switch>

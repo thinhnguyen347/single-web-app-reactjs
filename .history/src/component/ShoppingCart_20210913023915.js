@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { BrowserRouter as Switch, Route, Link } from "react-router-dom";
 import MainContent from "./ShoppingCartItem";
 import Menu from "./Menu";
-import Home from "./HomeContent";
+import Ho
 import { addedItems } from "./data-cart";
 
 export default function ShoppingCart() {
