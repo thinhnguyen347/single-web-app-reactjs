@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/single-web-app-reactjs/static/css/main.89d6e6a2.chunk.css",
-    "main.js": "/single-web-app-reactjs/static/js/main.9536bc09.chunk.js",
-    "main.js.map": "/single-web-app-reactjs/static/js/main.9536bc09.chunk.js.map",
+    "main.js": "/single-web-app-reactjs/static/js/main.9d4fa4c3.chunk.js",
+    "main.js.map": "/single-web-app-reactjs/static/js/main.9d4fa4c3.chunk.js.map",
     "runtime-main.js": "/single-web-app-reactjs/static/js/runtime-main.4801cf37.js",
     "runtime-main.js.map": "/single-web-app-reactjs/static/js/runtime-main.4801cf37.js.map",
     "static/css/2.38c122ae.chunk.css": "/single-web-app-reactjs/static/css/2.38c122ae.chunk.css",
-    "static/js/2.7c43a80d.chunk.js": "/single-web-app-reactjs/static/js/2.7c43a80d.chunk.js",
-    "static/js/2.7c43a80d.chunk.js.map": "/single-web-app-reactjs/static/js/2.7c43a80d.chunk.js.map",
+    "static/js/2.53c42600.chunk.js": "/single-web-app-reactjs/static/js/2.53c42600.chunk.js",
+    "static/js/2.53c42600.chunk.js.map": "/single-web-app-reactjs/static/js/2.53c42600.chunk.js.map",
     "static/js/3.7ebb7da2.chunk.js": "/single-web-app-reactjs/static/js/3.7ebb7da2.chunk.js",
     "static/js/3.7ebb7da2.chunk.js.map": "/single-web-app-reactjs/static/js/3.7ebb7da2.chunk.js.map",
     "index.html": "/single-web-app-reactjs/index.html",
     "static/css/2.38c122ae.chunk.css.map": "/single-web-app-reactjs/static/css/2.38c122ae.chunk.css.map",
     "static/css/main.89d6e6a2.chunk.css.map": "/single-web-app-reactjs/static/css/main.89d6e6a2.chunk.css.map",
-    "static/js/2.7c43a80d.chunk.js.LICENSE.txt": "/single-web-app-reactjs/static/js/2.7c43a80d.chunk.js.LICENSE.txt",
+    "static/js/2.53c42600.chunk.js.LICENSE.txt": "/single-web-app-reactjs/static/js/2.53c42600.chunk.js.LICENSE.txt",
     "static/media/contact.c21de3c1.webp": "/single-web-app-reactjs/static/media/contact.c21de3c1.webp",
     "static/media/footer.8628e74e.png": "/single-web-app-reactjs/static/media/footer.8628e74e.png",
     "static/media/home-header.56d397e7.webp": "/single-web-app-reactjs/static/media/home-header.56d397e7.webp",
@@ -24,8 +24,8 @@
   "entrypoints": [
     "static/js/runtime-main.4801cf37.js",
     "static/css/2.38c122ae.chunk.css",
-    "static/js/2.7c43a80d.chunk.js",
+    "static/js/2.53c42600.chunk.js",
     "static/css/main.89d6e6a2.chunk.css",
-    "static/js/main.9536bc09.chunk.js"
+    "static/js/main.9d4fa4c3.chunk.js"
   ]
 }
