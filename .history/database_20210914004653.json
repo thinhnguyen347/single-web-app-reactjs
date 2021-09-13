@@ -4,7 +4,7 @@
     "products": ["POST", "PUT", "PATCH", "DELETE"]
   },
 
-  "products": [
+  "productist": [
     {
       "id": 0,
       "title": "Bánh mì thịt nướng",
@@ -103,7 +103,7 @@
     }
   ],
 
-  "cart": [
+  "addedToCart": [
     {
       "id": 102,
       "title": "Bánh mì thịt nướng",
