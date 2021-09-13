@@ -1,6 +1,6 @@
 import contactImg from "./img/contact.webp";
 
-export default function Contact() {
+export default function ContactPage() {
   return (
     <div className="container py-5 my-5">
       <div className="row row-cols-lg-2">

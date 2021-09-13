@@ -27,8 +27,8 @@ function HomeContent({ slug, img, title, price }) {
             })}
             /suất
           </p>
-          <Link to={`/${slug}`}>
-            <p className="btn btn-outline-warning w-100 fw-bold mt-3 text-dark">
+          <Link to={`/${10slug}`}>
+            <p >
               Chi tiết
             </p>
           </Link>
@@ -86,7 +86,7 @@ export default function Home() {
     <>
       <div className="pb-3 overflow-hidden">
         <img src={home_header} className="w-100 img-fluid" alt="header" />
-        <p className="h3 mt-5 py-3 text-center">BEST-SELER THÁNG NÀY</p>
+        <p className="h3 mt-5 py-3 text-center">BEST-SELLER THÁNG NÀY</p>
         <div className="pb-5">
           <Slider {...settings}>
             {products.map(({ id, img, title, price, slug }) => (
