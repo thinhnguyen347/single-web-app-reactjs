@@ -1,0 +1,117 @@
+{
+  "protected_resources": {
+    "users": ["GET", "POST", "PUT", "PATCH", "DELETE"],
+    "products": ["POST", "PUT", "PATCH", "DELETE"]
+  },
+
+  "products": [
+    {
+      "id": 0,
+      "title": "Bánh mỳ thịt nướng",
+      "price": 20000,
+      "img": "https://i.ibb.co/t2SL86b/banhsmi.jpg",
+      "slug": "banh-my-thit-nuong",
+      "amount": 0
+    },
+    {
+      "id": 1,
+      "title": "Nem nướng Nha Trang",
+      "price": 60000,
+      "img": "https://i.ibb.co/Rckbs0d/nemnuong.jpg",
+      "slug": "nem-nuong-nha-trang",
+      "amount": 0
+    },
+    {
+      "id": 2,
+      "title": "Hamburger bò phô mai",
+      "price": 100000,
+      "img": "https://i.ibb.co/bsfJLZ0/hamburger.jpg",
+      "slug": "hamburger-bo",
+      "amount": 0
+    },
+    {
+      "id": 3,
+      "title": "Nem chua rán (20 cái)",
+      "price": 48000,
+      "img": "https://i.ibb.co/FwQ1cgt/nem-chua-ran.jpg",
+      "slug": "nem-chua-ran",
+      "amount": 0
+    },
+    {
+      "id": 4,
+      "title": "Trứng cút xào me (20 quả)",
+      "price": 35000,
+      "img": "https://i.ibb.co/NmQd7m1/trung-cut-xao-me.webp",
+      "slug": "trung-cut-xao-me",
+      "amount": 0
+    },
+    {
+      "id": 5,
+      "title": "Trà đào cam sả",
+      "price": 20000,
+      "img": "https://i.ibb.co/5skXHYS/tra-dao-cam-sa.webp",
+      "slug": "tra-dao-cam-sa",
+      "amount": 0
+    },
+    {
+      "id": 6,
+      "title": "Sữa chua matcha Hạ Long",
+      "price": 40000,
+      "img": "https://i.ibb.co/GTkhsWr/sua-chua.jpg",
+      "slug": "sua-chua-mat-cha-ha-long",
+      "amount": 0
+    },
+    {
+      "id": 7,
+      "title": "Chân gà xả tắc",
+      "price": 55000,
+      "img": "https://i.ibb.co/jRDRDZM/chan-ga-xa-tac.jpg",
+      "slug": "chan-ga-xa-tac",
+      "amount": 0
+    }
+  ],
+
+  "addedToCart": [
+    {
+      "id": 102,
+      "title": "Bánh mỳ thịt nướng",
+      "price": 20000,
+      "img": "https://i.ibb.co/t2SL86b/banhsmi.jpg",
+      "slug": "banh-my-thit-nuong",
+      "amount": 2
+    },
+    {
+      "id": 14,
+      "title": "Hamburger bò phô mai",
+      "price": 100000,
+      "img": "https://i.ibb.co/bsfJLZ0/hamburger.jpg",
+      "slug": "hamburger-bo",
+      "amount": 1
+    },
+    
+    {
+      "id": 35,
+      "title": "Trà đào cam sả",
+      "price": 20000,
+      "img": "https://i.ibb.co/5skXHYS/tra-dao-cam-sa.webp",
+      "slug": "tra-dao-cam-sa",
+      "amount": 0
+    },
+    {
+      "id": 6,
+      "title": "Sữa chua matcha Hạ Long",
+      "price": 40000,
+      "img": "https://i.ibb.co/GTkhsWr/sua-chua.jpg",
+      "slug": "sua-chua-mat-cha-ha-long",
+      "amount": 0
+    },
+    {
+      "id": 7,
+      "title": "Chân gà xả tắc",
+      "price": 55000,
+      "img": "https://i.ibb.co/jRDRDZM/chan-ga-xa-tac.jpg",
+      "slug": "chan-ga-xa-tac",
+      "amount": 0
+    }
+  ]
+}

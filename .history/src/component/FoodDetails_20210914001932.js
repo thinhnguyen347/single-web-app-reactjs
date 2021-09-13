@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import {
   BrowserRouter as Switch,
   Route,
@@ -9,22 +9,22 @@ import MenuPage from "./MenuPage";
 import { PRODUCTS } from "./data-products";
 
 export default function FoodDetails() {
-  const [products] = useState(PRODUCTS);
+  const [products, setProducts] = useState(PRODUCTS);
   let { slug } = useParams();
   let index = products.findIndex((item) => item.slug === slug);
 
-  // useEffect(() => {
-  //   fetch("https://api.example.com/items")
-  //     .then(res => res.json())
-  //     .then(
-  //       (result) => {
-  //         setProducts(result);
-  //       },
-  //       (error) => {
-  //         alert("Truy xuất thông tin thất bại")
-  //       }
-  //     )
-  // }, [slug])
+  useEffect(() => {
+    fetch("https://api.example.com/items")
+      .then(res => res.json())
+      .then(
+        (result) => {
+          setProducts(result);
+        },
+        (error) => {
+          alert("Truy xuất thông tin thất bại")
+        }
+      )
+  }, [])
 
   return (
     <Switch>
@@ -43,7 +43,8 @@ export default function FoodDetails() {
             </div>
             <div className="col col-md-6 p-4">
               <h3 className="fw-bold py-3 text-center">
-                {products[index].title}
+                {" "}
+                {PRODUCTS[index].title}
               </h3>
               <h5 className="fw-bold py-2">Nguyên liệu:</h5>
               <p>

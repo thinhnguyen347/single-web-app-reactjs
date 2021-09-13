@@ -129,11 +129,8 @@ export default function App() {
   return (
     <Router>
       <div>
-        <NavBar />
+      <NavBar />
         <Switch>
-          <Route exact path="/">
-            <HomePage />
-          </Route>
           <Route path="/menu">
             <MenuPage />
           </Route>
@@ -143,6 +140,10 @@ export default function App() {
           <Route path="/contact">
             <ContactPage />
           </Route>
+          <Route path="/">
+            <HomePage />
+          </Route>
+
         </Switch>
         <Footer />
       </div>

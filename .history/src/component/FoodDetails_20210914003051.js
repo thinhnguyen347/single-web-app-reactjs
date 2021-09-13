@@ -6,6 +6,7 @@ import {
   useParams,
 } from "react-router-dom";
 import MenuPage from "./MenuPage";
+import HomePage from "./HomePage";
 import { PRODUCTS } from "./data-products";
 
 export default function FoodDetails() {
@@ -31,6 +32,9 @@ export default function FoodDetails() {
       <Route path="/menu">
         <MenuPage />
       </Route>
+      <Route epath="/">
+        <HomePage />
+      </Route>
       <Route path={`/${slug}`}>
         <div className="container py-5">
           <div className="row row-cols-1 row-cols-md-2 g-3">
@@ -43,6 +47,7 @@ export default function FoodDetails() {
             </div>
             <div className="col col-md-6 p-4">
               <h3 className="fw-bold py-3 text-center">
+                {" "}
                 {products[index].title}
               </h3>
               <h5 className="fw-bold py-2">Nguyên liệu:</h5>

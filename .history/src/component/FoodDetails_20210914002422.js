@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import {
   BrowserRouter as Switch,
   Route,
@@ -6,10 +6,9 @@ import {
   useParams,
 } from "react-router-dom";
 import MenuPage from "./MenuPage";
-import { PRODUCTS } from "./data-products";
 
 export default function FoodDetails() {
-  const [products] = useState(PRODUCTS);
+  const [products] = useState({});
   let { slug } = useParams();
   let index = products.findIndex((item) => item.slug === slug);
 
@@ -43,6 +42,7 @@ export default function FoodDetails() {
             </div>
             <div className="col col-md-6 p-4">
               <h3 className="fw-bold py-3 text-center">
+                {" "}
                 {products[index].title}
               </h3>
               <h5 className="fw-bold py-2">Nguyên liệu:</h5>
