@@ -6,7 +6,7 @@ import "./component/NavigationBar.css";
 import navLogo from "./component/img/logo.png";
 import footerLogo from "./component/img/footer.png";
 import { addedItems } from "./component/data-cart";
-import Home from "./component/Home";
+import Home from "./component/HomeContent";
 import Menu from "./component/Menu";
 import ShoppingCart from "./component/ShoppingCart";
 import Contact from "./component/Contact";
@@ -129,7 +129,7 @@ export default function App() {
   return (
     <Router>
       <div>
-      <NavBar />
+        <NavBar />
         <Switch>
           <Route path="/menu">
             <Menu />

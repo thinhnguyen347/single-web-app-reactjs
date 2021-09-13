@@ -109,7 +109,6 @@ export default function Home() {
           <FoodDetails />
         </Route>
       </Switch>
-      ;
     </>
   );
 }
