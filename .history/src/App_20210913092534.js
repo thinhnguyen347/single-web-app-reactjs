@@ -130,7 +130,6 @@ function Footer() {
 export default function App() {
   return (
     <Router>
-      <NavBar />
       <Switch>
         <Route path="/menu">
           <Menu />
@@ -145,7 +144,7 @@ export default function App() {
           <Home />
         </Route>
       </Switch>
-      <Footer />
+      
     </Router>
   );
 }

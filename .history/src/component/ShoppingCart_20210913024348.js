@@ -78,8 +78,7 @@ export default function ShoppingCart() {
         <h2 className="text-center">GIỎ HÀNG</h2>
         {message ? (
           <p className="h6 text-center">
-            Hiện có
-            <span className="text-danger fw-bold">{addedList.length}</span> sản
+            Hiện có<span className="text-danger fw-bold">{addedList.length}</span> sản
             phẩm trong giỏ hàng
           </p>
         ) : (

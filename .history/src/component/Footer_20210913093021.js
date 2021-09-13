@@ -1,5 +1,7 @@
-import "./Footer.css";
+import { BrowserRouter as Link } from "react-router-dom";
 import footer from "./img/footer.png";
+import "bootstrap/dist/css/bootstrap.min.css";
+
 
 export default function Footer() {
   return (
@@ -10,27 +12,27 @@ export default function Footer() {
       >
         Hotline: 0984.018.891
       </a>
-      <a
-        href="/"
+      <Link
+        to="/"
         className="col-3 col-md-4 col-lg-2 d-flex align-items-center justify-content-start justify-content-md-start justify-content-lg-center mb-3 mb-md-0 me-md-auto py-3"
       >
         <img src={footer} alt="logo" width="100px" />
-      </a>
+      </Link>
       <ul className="nav ps-2 col-9 col-md-8 col-lg-5 flex-column flex-sm-row align-items-end flex-md-row  justify-content-md-end ">
         <li className="nav-item">
-          <a href="/" className="nav-link px-2 text-dark">
+          <Link to="/" className="nav-link px-2 text-dark">
             Trang chủ
-          </a>
+          </Link>
         </li>
         <li className="nav-item">
-          <a href="/" className="nav-link px-2 text-dark">
+          <Link to="/menu" className="nav-link px-2 text-dark">
             Thực đơn
-          </a>
+          </Link>
         </li>
         <li className="nav-item">
-          <a href="/" className="nav-link px-2 text-dark">
+          <Link to="/contact" className="nav-link px-2 text-dark">
             Liên hệ
-          </a>
+          </Link>
         </li>
       </ul>
       <p className="col-12 pt-3 pb-0 text-center fs-6 fw-lighter">

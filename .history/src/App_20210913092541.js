@@ -131,6 +131,8 @@ export default function App() {
   return (
     <Router>
       <NavBar />
+      <Footer />
+      
       <Switch>
         <Route path="/menu">
           <Menu />
@@ -145,7 +147,6 @@ export default function App() {
           <Home />
         </Route>
       </Switch>
-      <Footer />
     </Router>
   );
 }
