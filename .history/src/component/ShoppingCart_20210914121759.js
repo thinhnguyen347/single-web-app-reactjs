@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { BrowserRouter as Switch, Route, Link } from "react-router-dom";
 import MainContent from "./ShoppingCartItem";
 import MenuPage from "./MenuPage";
-import HomePage from "./HomePage";
+import Home from "./HomePage";
 import { addedItems } from "./data-cart";
 
 export default function ShoppingCart() {
@@ -171,10 +171,10 @@ export default function ShoppingCart() {
 
       <Switch>
         <Route path="/menu">
-          <MenuPage />
+          <Menu />
         </Route>
         <Route path="/">
-          <HomePage />
+          <Home />
         </Route>
       </Switch>
     </>

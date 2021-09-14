@@ -171,10 +171,10 @@ export default function ShoppingCart() {
 
       <Switch>
         <Route path="/menu">
-          <MenuPage />
+          <Menu />
         </Route>
         <Route path="/">
-          <HomePage />
+          <Home />
         </Route>
       </Switch>
     </>
