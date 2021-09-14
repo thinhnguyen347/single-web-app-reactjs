@@ -20,7 +20,7 @@ function MainContent({
         <Link to={`/menu/${slug}`}>
           <div className="container-fluid position-relative m-0 p-0 detail">
             <img src={img} className="card-img-top" alt="yummy-food" />
-            <p className="position-absolute btn top-50 start-50 translate-middle p-2 rounded-pill text-light bg-dark border-light opacity-0">
+            <p className=" position-absolute btn top-50 start-50 translate-middle p-2 rounded-pill text-light bg-dark border-light d-none">
               Xem chi tiết
             </p>
           </div>

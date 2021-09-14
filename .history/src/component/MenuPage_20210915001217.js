@@ -18,9 +18,9 @@ function MainContent({
     <div className="col col-md-6 col-lg-3 col-lg-2 p-1 p-md-2 p-lg-3 text-decoration-none text-dark">
       <div className="card h-100">
         <Link to={`/menu/${slug}`}>
-          <div className="container-fluid position-relative m-0 p-0 detail">
+          <div className="container-fluid position-relative m-0 p-0">
             <img src={img} className="card-img-top" alt="yummy-food" />
-            <p className="position-absolute btn top-50 start-50 translate-middle p-2 rounded-pill text-light bg-dark border-light opacity-0">
+            <p className="detail position-absolute btn top-50 start-50 translate-middle p-2 rounded-pill text-light bg-dark border-light d-none">
               Xem chi tiết
             </p>
           </div>

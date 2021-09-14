@@ -17,13 +17,9 @@ function MainContent({
   return (
     <div className="col col-md-6 col-lg-3 col-lg-2 p-1 p-md-2 p-lg-3 text-decoration-none text-dark">
       <div className="card h-100">
+        <div></div>
         <Link to={`/menu/${slug}`}>
-          <div className="container-fluid position-relative m-0 p-0 detail">
-            <img src={img} className="card-img-top" alt="yummy-food" />
-            <p className="position-absolute btn top-50 start-50 translate-middle p-2 rounded-pill text-light bg-dark border-light opacity-0">
-              Xem chi tiết
-            </p>
-          </div>
+          <img src={img} className="card-img-top" alt="yummy-food" />
         </Link>
         <div className="card-body d-flex flex-column">
           <h5 className="card-title text-center flex-fill">{title}</h5>
@@ -94,29 +90,29 @@ export default function MenuPage() {
 
   return (
     <>
-      <img src={headerImg} className="img-fluid" alt="header" />
-      <section className="px-3 py-5 p-md-5">
-        <h2 className="text-center pt-4">TUẦN NÀY CÓ GÌ?</h2>
-        <div className="container-fluid pt-4">
-          <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 g-lg-2">
-            {list.map(({ slug, id, img, title, price, amount }) => (
-              <MainContent
-                key={id}
-                id={id}
-                slug={slug}
-                img={img}
-                title={title}
-                price={price}
-                amount={amount}
-                increase={increase}
-                decrease={decrease}
-              />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <Switch>
+          <img src={headerImg} className="img-fluid" alt="header" />
+          <section className="px-3 py-5 p-md-5">
+            <h2 className="text-center pt-4">TUẦN NÀY CÓ GÌ?</h2>
+            <div className="container-fluid pt-4">
+              <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 g-lg-2">
+                {list.map(({ slug, id, img, title, price, amount }) => (
+                  <MainContent
+                    key={id}
+                    id={id}
+                    slug={slug}
+                    img={img}
+                    title={title}
+                    price={price}
+                    amount={amount}
+                    increase={increase}
+                    decrease={decrease}
+                  />
+                ))}
+              </div>
+            </div>
+          </section>
+        
+        <Switch>
         <Route path="/menu/:slug">
           <FoodDetails />
         </Route>
@@ -124,3 +120,4 @@ export default function MenuPage() {
     </>
   );
 }
+

@@ -18,8 +18,8 @@
   color: #01551b !important;
 }
 
-textarea {
-  min-height: 135px;
+textarea{
+min-height:135px;
 }
 
 footer {
@@ -35,16 +35,16 @@ footer .nav-link:hover {
   font-weight: bold !important;
 }
 
-.detail p {
-  transition: 0.5s ease-in-out;
-  -webkit-transition: 0.5s ease-in-out;
-  -moz-transition: 0.5s ease-in-out;
-  -ms-transition: 0.5s ease-in-out;
-  -o-transition: 0.5s ease-in-out;
+.detail:hover p{
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }
 
-.detail:hover p {
-  opacity: 0.9 !important;
+.detail:hover p{
+  display: block !important;
 }
 
 /* Medium Devices, Desktops */
