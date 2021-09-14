@@ -61,7 +61,7 @@ export default function FoodDetails() {
               <li>Ea dolore in deserunt elit&nbsp;deserunt.</li>
             </ul>
             <Link to="/menu">
-              <button className="btn btn-primary my-5 d-block mx-auto">
+              <button className="btn btn-primary my-4 d-block mx-auto">
                 Quay lại đặt hàng
               </button>
             </Link>
