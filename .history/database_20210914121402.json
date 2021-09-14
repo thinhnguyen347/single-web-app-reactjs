@@ -1,7 +1,7 @@
 {
 "protected_resources": {
     "cart": ["GET", "POST", "PUT", "PATCH", "DELETE"],
-    "products": ["GET", "POST", "PUT", "PATCH", "DELETE"]
+add
   },
   "products": [
     {
