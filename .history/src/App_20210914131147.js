@@ -10,7 +10,7 @@ import HomePage from "./component/HomePage";
 import MenuPage from "./component/MenuPage";
 import ShoppingCart from "./component/ShoppingCart";
 import ContactPage from "./component/ContactPage";
-import FoodDetails from "./component/FoodDetails";
+import Food
 import "./App.css";
 
 function NavBar() {
@@ -133,6 +133,9 @@ export default function App() {
         <NavBar />
         <Switch>
           <Route exact path="/">
+            <HomePage />
+          </Route>
+          <Route path="/:slug">
             <HomePage />
           </Route>
           <Route path="/menu">

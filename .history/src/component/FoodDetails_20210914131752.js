@@ -6,6 +6,8 @@ import {
   useParams,
 } from "react-router-dom";
 import MenuPage from "./MenuPage";
+import HomePage from "./HomePage";
+
 import { PRODUCTS } from "./data-products";
 
 export default function FoodDetails() {
@@ -67,7 +69,6 @@ export default function FoodDetails() {
           </div>
         </div>
       </div>
-      
       <Route path="/menu">
         <MenuPage />
       </Route>

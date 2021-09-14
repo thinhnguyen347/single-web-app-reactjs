@@ -67,11 +67,9 @@ export default function FoodDetails() {
           </div>
         </div>
       </div>
-      
       <Route path="/menu">
         <MenuPage />
       </Route>
-      
     </Switch>
   );
 }

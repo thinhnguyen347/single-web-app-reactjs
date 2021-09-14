@@ -135,6 +135,9 @@ export default function App() {
           <Route exact path="/">
             <HomePage />
           </Route>
+          <Route path="/:slug">
+            <HomePage />
+          </Route>
           <Route path="/menu">
             <MenuPage />
           </Route>
