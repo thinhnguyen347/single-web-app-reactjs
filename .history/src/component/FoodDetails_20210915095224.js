@@ -12,32 +12,31 @@ export default function FoodDetails() {
   const [done, setDone] = useState(false);
   let index;
   let { slug } = useParams();
+  
+  if(done) {index = products.findIndex((item) => item.slug === slug)};
 
-  if (done) {
-    index = products.findIndex((item) => item.slug === slug);
-  }
 
   useEffect(() => {
     fetch("https://yummy-db.herokuapp.com/products")
       .then((res) => res.json())
       .then((data) => {
         setProducts(data);
-        setDone(true);
+        setDone(true)
       });
   }, []);
+
+  
 
   return (
     <>
       <div className="container py-5">
         <div className="row row-cols-1 row-cols-md-2 g-3">
           <div className="col col-md-6 p-5">
-            {done && (
-              <img
-                src={products[index].img}
-                className="w-100 img-fluid rounded"
-                alt={slug}
-              />
-            )}
+            {done ? <img
+              src={products[index].img : ""}
+              className="w-100 img-fluid rounded"
+              alt={slug}
+            />}
           </div>
           <div className="col col-md-6 p-4">
             <h3 className="fw-bold py-3 text-center">

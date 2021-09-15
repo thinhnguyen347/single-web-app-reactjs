@@ -88,7 +88,7 @@ export default function HomePage() {
     <>
       <div className="pb-3 overflow-hidden">
         <img src={home_header} className="w-100 img-fluid" alt="header" />
-        <p className="h3 mt-5 py-3 text-center">BEST-SELLER CỦA THÁNG</p>
+        <p className="h3 mt-5 py-3 text-center">BEST-SELLER THÁNG</p>
         <div className="pb-5">
           <Slider {...settings}>
             {products.map(({ id, img, title, price, slug }) => (
