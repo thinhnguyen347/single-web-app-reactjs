@@ -17,7 +17,7 @@ function MainContent({
   return (
     <div className="col col-md-6 col-lg-3 col-lg-2 p-1 p-md-2 p-lg-3 text-decoration-none text-dark">
       <div className="card h-100">
-        <Link to={`/menu/${slug}/${id}`}>
+        <Link to={`/menu/${slug}`}>
           <div className="container-fluid position-relative m-0 p-0 detail">
             <img src={img} className="card-img-top" alt="yummy-food" />
             <p className="position-absolute btn top-50 start-50 translate-middle px-3 rounded-pill text-light bg-dark border-light opacity-0">
@@ -117,7 +117,7 @@ export default function MenuPage() {
       </section>
 
       <Switch>
-        <Route path="/menu/:slug/:id">
+        <Route path="/menu/:slug/">
           <FoodDetails />
         </Route>
       </Switch>
