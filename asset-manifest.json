@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/yummi-fastfood-reactjs/static/css/main.5a3d2435.chunk.css",
-    "main.js": "/yummi-fastfood-reactjs/static/js/main.1b64fa6c.chunk.js",
-    "main.js.map": "/yummi-fastfood-reactjs/static/js/main.1b64fa6c.chunk.js.map",
-    "runtime-main.js": "/yummi-fastfood-reactjs/static/js/runtime-main.f0d94300.js",
-    "runtime-main.js.map": "/yummi-fastfood-reactjs/static/js/runtime-main.f0d94300.js.map",
+    "main.css": "/yummi-fastfood-reactjs/static/css/main.89c931da.chunk.css",
+    "main.js": "/yummi-fastfood-reactjs/static/js/main.69e82a71.chunk.js",
+    "main.js.map": "/yummi-fastfood-reactjs/static/js/main.69e82a71.chunk.js.map",
+    "runtime-main.js": "/yummi-fastfood-reactjs/static/js/runtime-main.2d9c8193.js",
+    "runtime-main.js.map": "/yummi-fastfood-reactjs/static/js/runtime-main.2d9c8193.js.map",
     "static/css/2.bf364636.chunk.css": "/yummi-fastfood-reactjs/static/css/2.bf364636.chunk.css",
-    "static/js/2.93de570e.chunk.js": "/yummi-fastfood-reactjs/static/js/2.93de570e.chunk.js",
-    "static/js/2.93de570e.chunk.js.map": "/yummi-fastfood-reactjs/static/js/2.93de570e.chunk.js.map",
-    "static/js/3.428b3a43.chunk.js": "/yummi-fastfood-reactjs/static/js/3.428b3a43.chunk.js",
-    "static/js/3.428b3a43.chunk.js.map": "/yummi-fastfood-reactjs/static/js/3.428b3a43.chunk.js.map",
+    "static/js/2.6aac6e82.chunk.js": "/yummi-fastfood-reactjs/static/js/2.6aac6e82.chunk.js",
+    "static/js/2.6aac6e82.chunk.js.map": "/yummi-fastfood-reactjs/static/js/2.6aac6e82.chunk.js.map",
+    "static/js/3.6de05bc1.chunk.js": "/yummi-fastfood-reactjs/static/js/3.6de05bc1.chunk.js",
+    "static/js/3.6de05bc1.chunk.js.map": "/yummi-fastfood-reactjs/static/js/3.6de05bc1.chunk.js.map",
     "index.html": "/yummi-fastfood-reactjs/index.html",
     "static/css/2.bf364636.chunk.css.map": "/yummi-fastfood-reactjs/static/css/2.bf364636.chunk.css.map",
-    "static/css/main.5a3d2435.chunk.css.map": "/yummi-fastfood-reactjs/static/css/main.5a3d2435.chunk.css.map",
-    "static/js/2.93de570e.chunk.js.LICENSE.txt": "/yummi-fastfood-reactjs/static/js/2.93de570e.chunk.js.LICENSE.txt",
+    "static/css/main.89c931da.chunk.css.map": "/yummi-fastfood-reactjs/static/css/main.89c931da.chunk.css.map",
+    "static/js/2.6aac6e82.chunk.js.LICENSE.txt": "/yummi-fastfood-reactjs/static/js/2.6aac6e82.chunk.js.LICENSE.txt",
     "static/media/contact.c21de3c1.webp": "/yummi-fastfood-reactjs/static/media/contact.c21de3c1.webp",
     "static/media/footer.8628e74e.png": "/yummi-fastfood-reactjs/static/media/footer.8628e74e.png",
     "static/media/home-header.56d397e7.webp": "/yummi-fastfood-reactjs/static/media/home-header.56d397e7.webp",
@@ -22,10 +22,10 @@
     "static/media/slick-theme.css": "/yummi-fastfood-reactjs/static/media/slick.c94f7671.ttf"
   },
   "entrypoints": [
-    "static/js/runtime-main.f0d94300.js",
+    "static/js/runtime-main.2d9c8193.js",
     "static/css/2.bf364636.chunk.css",
-    "static/js/2.93de570e.chunk.js",
-    "static/css/main.5a3d2435.chunk.css",
-    "static/js/main.1b64fa6c.chunk.js"
+    "static/js/2.6aac6e82.chunk.js",
+    "static/css/main.89c931da.chunk.css",
+    "static/js/main.69e82a71.chunk.js"
   ]
 }
