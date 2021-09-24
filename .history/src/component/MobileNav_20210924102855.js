@@ -20,7 +20,7 @@ export default function MobileNav({
         <li className="nav-item">
           <NavLink
             activeClassName="active"
-            className="nav-link text-dark px-2 text-center"
+            className="nav-link text-dark px-2"
             aria-current="page"
             to="/"
             exact
@@ -32,7 +32,7 @@ export default function MobileNav({
         <li className="nav-item">
           <NavLink
             activeClassName="active"
-            className="nav-link text-dark px-2 text-center"
+            className="nav-link text-dark"
             to="/menu"
             onClick={hideModal}
           >
@@ -42,7 +42,7 @@ export default function MobileNav({
         <li className="nav-item">
           <NavLink
             activeClassName="active"
-            className="nav-link text-dark px-2 text-center"
+            className="nav-link text-dark"
             to="/contact"
             onClick={hideModal}
           >
@@ -52,7 +52,7 @@ export default function MobileNav({
         <li className="nav-item ">
           <NavLink
             activeClassName="active"
-            className="nav-link text-dark px-1 text-center"
+            className="nav-link text-dark"
             to="/shopping-cart"
             onClick={hideModal}
           >

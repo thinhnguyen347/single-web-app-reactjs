@@ -106,6 +106,12 @@ footer .nav-link:hover {
   box-sizing: content-box;
 }
 
+@media only screen and (min-width: 992px) {
+  a[href="tel:+84984018891"] {
+    border-bottom: none !important;
+  }
+}
+
 .result-modal::-webkit-scrollbar {
   width: 10px;
 }
@@ -129,9 +135,9 @@ footer .nav-link:hover {
   background: #96cc4a;
 }
 
-.mobile-nav {
+.mobile-nav{
   z-index: 25;
-  background-color: #aeca87 !important;
+  background-color: #AECA87 !important;
   height: 100vh !important;
   width: 60vw !important;
   transition: all 0.5s ease-in-out;
@@ -141,25 +147,17 @@ footer .nav-link:hover {
   -o-transition: all 0.5s ease-in-out;
 }
 
-.alert {
+.alert{
   max-width: 300px !important;
-  transition: all 0.8s ease-in-out;
-  -webkit-transition: all 0.8s ease-in-out;
-  -moz-transition: all 0.8s ease-in-out;
-  -ms-transition: all 0.8s ease-in-out;
-  -o-transition: all 0.8s ease-in-out;
+  transition: all .8s ease-in-out;
+  -webkit-transition: all .8s ease-in-out;
+  -moz-transition: all .8s ease-in-out;
+  -ms-transition: all .8s ease-in-out;
+  -o-transition: all .8s ease-in-out;
   z-index: 10;
   opacity: 0;
 }
 
-@media only screen and (max-width: 320px) {
-  .slick-dots {
-    bottom: -45px;
-  }
-}
+.slick-dots {
+  bottom: -45px;}
 
-@media only screen and (min-width: 992px) {
-  a[href="tel:+84984018891"] {
-    border-bottom: none !important;
-  }
-}

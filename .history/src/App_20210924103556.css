@@ -152,9 +152,12 @@ footer .nav-link:hover {
   opacity: 0;
 }
 
-@media only screen and (max-width: 320px) {
-  .slick-dots {
-    bottom: -45px;
+.slick-dots {
+  bottom: -45px;
+}
+@media only screen and (min-width: 320px) {
+  a[href="tel:+84984018891"] {
+    border-bottom: none !important;
   }
 }
 
