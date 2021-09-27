@@ -78,7 +78,7 @@ export default function HomePage() {
         setProducts(result);
         setIsLoading(false);
       });
-      localStorage.setItem("cart", "");
+      localStorage.setItem("cart", JSON.stringify(addedItems.current));
   }, []);
 
   return (
