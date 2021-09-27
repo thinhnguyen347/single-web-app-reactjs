@@ -1,9 +1,10 @@
 {
-  "name": "yummi-fastfood-reactjs",
+  "name": "yummy-fastfood-reactjs",
   "version": "0.1.0",
-  "homepage": "https://thinhnguyen347.github.io/yummi-fastfood-reactjs",
+  "homepage": "https://thinhnguyen347.github.io/yummy-fastfood-reactjs",
   "private": true,
   "dependencies": {
+    "@reduxjs/toolkit": "^1.6.1",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
@@ -12,6 +13,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.2.0",
+    "react-redux": "^7.2.5",
     "react-router-dom": "^5.3.0",
     "react-scripts": "4.0.3",
     "react-slick": "^0.28.1",
