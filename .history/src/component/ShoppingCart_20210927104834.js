@@ -4,16 +4,12 @@ import MainContent from "./ShoppingCartItem";
 import MenuPage from "./MenuPage";
 
 export default function ShoppingCart() {
-  const [addedList, setAddedList] = useState("");
+  const [addedList, setAddedList] = useState(
+    localStorage.getItem("cart") || ""
+  );
   const [message, setMessage] = useState(true);
   const [hideDeleteAllBtn, setHideDeleteAllBtn] = useState(false);
   let list, vat, final_price, content;
-
-  useEffect(() => {
-    let data = localStorage.getItem("cart");
-    if (data.length === 0) setHideDeleteAllBtn(true);
-    setAddedList(data);
-  }, []);
 
   useEffect(() => {
     if (addedList.length === 0) setHideDeleteAllBtn(true);
@@ -119,9 +115,7 @@ export default function ShoppingCart() {
                 />
               ))}
               <button
-                className={`btn btn-light text-decoration-underline mt-3 text-end ${
-                  hideDeleteAllBtn ? "d-none" : ""
-                } ${addedList.length <= 0 ? "d-none" : ""}`}
+                className={`btn btn-light text-decoration-underline mt-3 text-end ${hideDeleteAllBtn ? "d-none" : ""} ${hideDeleteAllBtn ? "d-none" : ""}`}
                 onClick={deleteAll}
               >
                 Xoá hết

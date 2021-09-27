@@ -10,10 +10,8 @@ export default function ShoppingCart() {
   let list, vat, final_price, content;
 
   useEffect(() => {
-    let data = localStorage.getItem("cart");
-    if (data.length === 0) setHideDeleteAllBtn(true);
-    setAddedList(data);
-  }, []);
+    if (addedList.length === 0) setHideDeleteAllBtn(true);
+  }, [addedList.length]);
 
   useEffect(() => {
     if (addedList.length === 0) setHideDeleteAllBtn(true);
