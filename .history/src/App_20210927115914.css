@@ -15,13 +15,13 @@
   transition: 0.5s ease-in-out;
 }
 
-/* .nav-link:not(.active):hover {
-  transform: translateY(-5px);
+.nav-link:not(.active):hover {
+  transform: translateY(-px);
   -webkit-transform: translateY(-5px);
   -moz-transform: translateY(-5px);
   -ms-transform: translateY(-5px);
   -o-transform: translateY(-5px);
-} */
+}
 
 .nav-link.active::after {
   content: "";
