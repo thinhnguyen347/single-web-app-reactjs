@@ -4,16 +4,14 @@ import MainContent from "./ShoppingCartItem";
 import MenuPage from "./MenuPage";
 
 export default function ShoppingCart() {
-  const [addedList, setAddedList] = useState("");
+  const [addedList, setAddedList] = useState([]);
   const [message, setMessage] = useState(true);
   const [hideDeleteAllBtn, setHideDeleteAllBtn] = useState(false);
   let list, vat, final_price, content;
 
   useEffect(() => {
     let data = localStorage.getItem("cart");
-    if (data.length === 0) {
-      setHideDeleteAllBtn(true);
-    }
+    if (data.length === 0) setHideDeleteAllBtn(true);
     setAddedList(data);
   }, []);
 

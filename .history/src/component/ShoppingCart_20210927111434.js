@@ -14,7 +14,6 @@ export default function ShoppingCart() {
     if (data.length === 0) {
       setHideDeleteAllBtn(true);
     }
-    setAddedList(data);
   }, []);
 
   useEffect(() => {

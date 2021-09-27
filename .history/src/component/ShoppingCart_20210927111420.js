@@ -13,8 +13,8 @@ export default function ShoppingCart() {
     let data = localStorage.getItem("cart");
     if (data.length === 0) {
       setHideDeleteAllBtn(true);
+      setAddedList([]);
     }
-    setAddedList(data);
   }, []);
 
   useEffect(() => {
