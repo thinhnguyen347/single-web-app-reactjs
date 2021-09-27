@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { BiMinus, BiPlus } from "react-icons/bi";
-import { updateCart } from "../app/cartSlice";
 export default function MainContent({
     slug,
     id,
@@ -53,7 +52,7 @@ export default function MainContent({
   
             <p
               className="btn btn-warning w-100 fw-bold mt-3 my-0"
-              onClick={(e) => {addToList(id, e); dispatch(updateCart());}}
+              onClick={(e) => {addToList(id, e); dispatch();}}
             >
               Thêm vào giỏ hàng
             </p>

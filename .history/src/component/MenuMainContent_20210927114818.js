@@ -53,7 +53,7 @@ export default function MainContent({
   
             <p
               className="btn btn-warning w-100 fw-bold mt-3 my-0"
-              onClick={(e) => {addToList(id, e); dispatch(updateCart());}}
+              onClick={(e) => {addToList(id, e); dispatch();}}
             >
               Thêm vào giỏ hàng
             </p>

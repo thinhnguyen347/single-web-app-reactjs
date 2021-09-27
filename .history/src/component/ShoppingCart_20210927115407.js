@@ -120,7 +120,6 @@ export default function ShoppingCart() {
                   decrease={decrease}
                   increase={increase}
                   deleteItem={deleteItem}
-                  dispatch={dispatch}
                 />
               ))}
               <button

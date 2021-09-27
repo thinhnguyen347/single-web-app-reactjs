@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { BiMinus, BiPlus } from "react-icons/bi";
-import { updateCart } from "../app/cartSlice";
 export default function MainContent({
     slug,
     id,
@@ -10,7 +9,7 @@ export default function MainContent({
     amount,
     increase,
     decrease,
-    addToList, dispatch
+    addToList,
   }) {
     return (
       <div className="col col-md-6 col-lg-3 col-lg-2 p-1 p-md-2 p-lg-4 text-decoration-none text-dark">

@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { BiMinus, BiPlus } from "react-icons/bi";
-import { updateCart } from "../app/cartSlice";
 export default function MainContent({
     slug,
     id,

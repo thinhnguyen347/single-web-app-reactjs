@@ -65,7 +65,7 @@ export default function MainContent({
             </div>
             <button
                 className="btn-close position-absolute end-0 top-0 p-0 mt-0 me-2 me-md-1 me-lg-3"
-                onClick={(e) => {deleteItem(id, e); dispatch(updateCart())}}
+                onClick={(e) => deleteItem(id, e)}
               ></button>
           </div>
         </div>

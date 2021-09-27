@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Switch, Route, Link } from "react-router-dom";
-import { useDispatch } from "react-redux";
 import MainContent from "./ShoppingCartItem";
 import MenuPage from "./MenuPage";
 
@@ -120,7 +119,6 @@ export default function ShoppingCart() {
                   decrease={decrease}
                   increase={increase}
                   deleteItem={deleteItem}
-                  dispatch={dispatch}
                 />
               ))}
               <button

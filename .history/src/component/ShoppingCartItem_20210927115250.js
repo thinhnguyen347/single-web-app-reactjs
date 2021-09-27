@@ -3,6 +3,7 @@ import {BiPlus} from "react-icons/bi";
 import {BiMinus} from "react-icons/bi";
 import { updateCart } from "../app/cartSlice";
 
+
 export default function MainContent({
   id,
   title,
@@ -12,7 +13,6 @@ export default function MainContent({
   increase,
   decrease,
   deleteItem,
-  dispatch
 }) {
   return (
     <div className="container-fluid p-0 mb-3">
@@ -65,7 +65,7 @@ export default function MainContent({
             </div>
             <button
                 className="btn-close position-absolute end-0 top-0 p-0 mt-0 me-2 me-md-1 me-lg-3"
-                onClick={(e) => {deleteItem(id, e); dispatch(updateCart())}}
+                onClick={(e) => deleteItem(id, e)}
               ></button>
           </div>
         </div>

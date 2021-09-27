@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { BrowserRouter as Switch, Route } from "react-router-dom";
 import { useDispatch } from "react-redux";
+import { updateCart } from "../app/cartSlice";
 import FoodDetails from "./FoodDetails";
 import MainContent from "./MenuMainContent";
 import headerImg from "./img/menu-header.webp";
@@ -209,7 +210,7 @@ export default function MenuPage() {
                     increase={increase}
                     decrease={decrease}
                     addToList={addToList}
-                    dispatch= {dispatch}
+                    dispatch
                   />
                 ))}
               </div>
