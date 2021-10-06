@@ -1,0 +1,22 @@
+import { createSlice } from "@reduxjs/toolkit";
+
+const initialState = {
+  shippingFee: 25000,
+};
+
+export const DeSlice = createSlice({
+  name: "shippingFee",
+  initialState,
+  reducers: {
+    shippingFeeToHome: (state) => {
+      state.shippingFee = 25000;
+    },
+    getOrderOnSite: (state) => {
+      state.shippingFee = 0;
+    },
+  },
+});
+
+export const { shippingFeeToHome, getOrderOnSite } = shippingFeeSlice.actions;
+
+export default shippingFeeSlice.reducer;
