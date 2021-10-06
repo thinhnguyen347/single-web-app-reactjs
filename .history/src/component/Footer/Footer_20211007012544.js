@@ -5,9 +5,9 @@ import { FaRegEnvelope } from "react-icons/fa";
 export default function Footer() {
   return (
     <>
-      <div className="newsletter container-fluid py-4 py-lg-5">
-        <div className="row g-4 d-flex align-items-center justify-content-center">
-          <div className="col-12 col-sm-12 col-md-4 col-lg-3 d-flex align-items-center justify-content-center justify-content-lg-end">
+      <div className="newsletter container-fluid pb-4">
+        <div className="row my-4 g-5 d-flex align-items-center justify-content-center">
+          <div className="col-12 col-sm-12 col-md-3 col-lg-2 d-flex align-items-center justify-content-center justify-content-lg-end">
             <label htmlFor="email" className="d-block">
               <span className="fs-4">
                 <FaRegEnvelope />
@@ -15,7 +15,7 @@ export default function Footer() {
               &nbsp;&nbsp;Đăng ký nhận tin
             </label>
           </div>
-          <div className="col-12 col-sm-12 col-md-6 d-flex align-items-center justify-content-center">
+          <div className="col-12 col-sm-12 col-md-5 d-flex align-items-center justify-content-center">
             <input
               type="email"
               id="email"
