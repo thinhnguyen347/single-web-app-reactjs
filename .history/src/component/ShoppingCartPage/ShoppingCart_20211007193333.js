@@ -113,12 +113,8 @@ export default function ShoppingCart({ moveToShippingInfo }) {
         )}
         <p className="h6 pb-3 text-center">* * *</p>
         <div className="container pt-5">
-          <div className="row g-4 d-flex justify-content-center">
-            <div
-              className={`col-12 col-md-8 pb-5 ${
-                final_price === 0 && "py-md-5 mb-5 ps-md-0"
-              }`}
-            >
+          <div className="row g-4">
+            <div className="col-12 col-md-8 pb-5 py-md-0 ps-md-0">
               {content}
               {list.map(({ id, title, img, price, amount }) => (
                 <ShoppingCartItem
@@ -152,11 +148,7 @@ export default function ShoppingCart({ moveToShippingInfo }) {
                 </button>
               </Link>
             </div>
-            <div
-              className={`col-12 col-md-4 pe-0 ${
-                final_price === 0 && "d-none"
-              }`}
-            >
+            <div className={`col-12 col-md-4 pe-0`}>
               <div className="p-4 border rounded">
                 <p className="h4 fw-bold text-center pb-3 border-bottom">
                   Thông tin đơn&nbsp;hàng
@@ -206,16 +198,15 @@ export default function ShoppingCart({ moveToShippingInfo }) {
             </div>
           </div>
         </div>
+        <div
+          className={`alert alert-primary text-center position-fixed start-50 translate-middle-x ${
+            alertSuccess ? "opacity-100 active" : "opacity-0"
+          }`}
+          role="alert"
+        >
+          Xoá sản phẩm thành công!
+        </div>
       </section>
-      <div
-        className={`alert alert-primary text-center position-fixed start-50 translate-middle-x ${
-          alertSuccess ? "opacity-100 active" : "opacity-0"
-        }`}
-        role="alert"
-      >
-        Xoá sản phẩm thành công!
-      </div>
-      
       <Switch>
         <Route path="/menu">
           <MenuPage />

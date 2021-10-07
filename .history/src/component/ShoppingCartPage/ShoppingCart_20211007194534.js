@@ -215,7 +215,6 @@ export default function ShoppingCart({ moveToShippingInfo }) {
       >
         Xoá sản phẩm thành công!
       </div>
-      
       <Switch>
         <Route path="/menu">
           <MenuPage />

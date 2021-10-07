@@ -72,15 +72,6 @@ export default function PaymentInfo({ returnToGuestInfo }) {
           Hoàn thành đơn hàng
         </button>
       </div>
-    </div>
-    <div
-        className={`alert alert-primary position-fixed start-50 translate-middle-x text-center ${
-          alertSuccess ? "opacity-100 active" : "opacity-0"
-        }`}
-        role="alert"
-      >
-        Đặt hàng thành công!
-      </div>
-    </>
+    </div></>
   );
 }

@@ -74,7 +74,7 @@ export default function PaymentInfo({ returnToGuestInfo }) {
       </div>
     </div>
     <div
-        className={`alert alert-primary position-fixed start-50 translate-middle-x text-center ${
+        className={`alert alert-primary position-fixed start-50 translate-middle ${
           alertSuccess ? "opacity-100 active" : "opacity-0"
         }`}
         role="alert"

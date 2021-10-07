@@ -188,7 +188,7 @@ export default function GuestInfo({ returnToCart, goToPaymentInfo }) {
       </div>
       <div
         className={`alert alert-danger text-center position-fixed start-50 translate-middle-x ${
-          alertFail ? "opacity-100 active" : "opacity-0"
+          alertFail ?"opacity-100 active" : "opacity-0"
         }`}
         role="alert"
       >

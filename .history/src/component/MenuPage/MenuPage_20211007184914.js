@@ -399,7 +399,7 @@ export default function MenuPage() {
 
       <div
         className={`alert alert-danger text-center position-fixed start-50 translate-middle-x ${
-          alertFail ? "opacity-100 active" : "opacity-0"
+          alertFail ? "bottom-0 opacity-100" : "top-100 opacity-0"
         }`}
         role="alert"
       >

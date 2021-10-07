@@ -4,7 +4,7 @@ export default function PaymentInfo({ returnToGuestInfo }) {
   const [alertSuccess, setAlertSuccess] = useState(false);
   const [onlinePayment, setOnlinePayment] = useState(false);
 
-  return (<>
+  return (
     <div className="section">
       <div className="mb-4 mb-md-4">
         <p className="h4 fw-bold">Phương thức thanh toán</p>
@@ -72,15 +72,14 @@ export default function PaymentInfo({ returnToGuestInfo }) {
           Hoàn thành đơn hàng
         </button>
       </div>
-    </div>
-    <div
-        className={`alert alert-primary position-fixed start-50 translate-middle-x text-center ${
+      <div
+        className={`alert alert-primary position-fixed bottom-0 start-50 translate-middle ${
           alertSuccess ? "opacity-100 active" : "opacity-0"
         }`}
         role="alert"
       >
         Đặt hàng thành công!
       </div>
-    </>
+    </div>
   );
 }

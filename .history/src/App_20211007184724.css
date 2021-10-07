@@ -232,10 +232,6 @@ footer .nav-link:hover {
   -ms-transition: all .8s ease-in-out !important;
   -o-transition: all .8s ease-in-out !important;
   z-index: 10;
-  bottom: -100px;
-}
-
-.alert.active{
   bottom: 0
 }
 

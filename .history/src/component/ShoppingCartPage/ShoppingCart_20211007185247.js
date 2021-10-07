@@ -12,10 +12,7 @@ export default function ShoppingCart({ moveToShippingInfo }) {
   const [message, setMessage] = useState(true);
   const [hideDeleteAllBtn, setHideDeleteAllBtn] = useState(false);
   const [alertSuccess, setAlertSuccess] = useState(false);
-  let list = [...addedList],
-    vat,
-    final_price,
-    content;
+  let list = [...addedList], vat, final_price, content;
 
   useEffect(() => {
     let data = JSON.parse(window.localStorage.getItem("cart"));
@@ -35,6 +32,8 @@ export default function ShoppingCart({ moveToShippingInfo }) {
     }
   }, [addedList]);
 
+  ;
+
   if (list.length > 0) {
     let subprice = list.map((item) => item.price * item.amount);
     let subprice1 = subprice.reduce(
@@ -51,11 +50,10 @@ export default function ShoppingCart({ moveToShippingInfo }) {
   }
 
   function deleteAll() {
-    window.localStorage.setItem("cart", "[]");
     setAddedList([]);
     setMessage(false);
     setHideDeleteAllBtn(true);
-    setAlertSuccess(true);
+    window.localStorage.setItem("cart", "[]");
   }
 
   function increase(id) {
@@ -70,7 +68,7 @@ export default function ShoppingCart({ moveToShippingInfo }) {
     if (list[index].amount >= 2) list[index].amount = list[index].amount - 1;
     window.localStorage.setItem("cart", JSON.stringify(list));
     setAddedList(list);
-    setAlertSuccess(true);
+    setAlertSuccess(true)
   }
 
   function deleteItem(id) {
@@ -113,12 +111,8 @@ export default function ShoppingCart({ moveToShippingInfo }) {
         )}
         <p className="h6 pb-3 text-center">* * *</p>
         <div className="container pt-5">
-          <div className="row g-4 d-flex justify-content-center">
-            <div
-              className={`col-12 col-md-8 pb-5 ${
-                final_price === 0 && "py-md-5 mb-5 ps-md-0"
-              }`}
-            >
+          <div className="row g-4">
+            <div className="col-12 col-md-8 pb-5 py-md-0 ps-md-0">
               {content}
               {list.map(({ id, title, img, price, amount }) => (
                 <ShoppingCartItem
@@ -152,11 +146,7 @@ export default function ShoppingCart({ moveToShippingInfo }) {
                 </button>
               </Link>
             </div>
-            <div
-              className={`col-12 col-md-4 pe-0 ${
-                final_price === 0 && "d-none"
-              }`}
-            >
+            <div className="col-12 col-md-4 pe-0">
               <div className="p-4 border rounded">
                 <p className="h4 fw-bold text-center pb-3 border-bottom">
                   Thông tin đơn&nbsp;hàng
@@ -185,11 +175,7 @@ export default function ShoppingCart({ moveToShippingInfo }) {
                   <button
                     disabled={hideDeleteAllBtn}
                     className="payment btn btn-warning w-100 fw-bold text-uppercase"
-                    onClick={() => {
-                      moveToShippingInfo();
-                      dispatch(updateBill(final_price));
-                      dispatch(shippingFeeToHome());
-                    }}
+                    onClick={() => {moveToShippingInfo(); dispatch(updateBill(final_price)); dispatch(shippingFeeToHome())}}
                   >
                     Thanh toán
                   </button>
@@ -206,16 +192,15 @@ export default function ShoppingCart({ moveToShippingInfo }) {
             </div>
           </div>
         </div>
-      </section>
-      <div
+        <div
         className={`alert alert-primary text-center position-fixed start-50 translate-middle-x ${
           alertSuccess ? "opacity-100 active" : "opacity-0"
         }`}
         role="alert"
       >
-        Xoá sản phẩm thành công!
+        Thêm vào giỏ thành công!
       </div>
-      
+      </section>
       <Switch>
         <Route path="/menu">
           <MenuPage />

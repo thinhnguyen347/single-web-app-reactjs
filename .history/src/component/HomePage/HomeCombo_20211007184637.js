@@ -72,7 +72,7 @@ export default function Combo() {
       )}
       <div
         className={`alert alert-primary text-center position-fixed start-50 translate-middle-x ${
-          alertSuccess ? "opacity-100 active" : "opacity-0"
+          alertSuccess ? "opacity-100" : " opacity-0"
         }`}
         role="alert"
       >
