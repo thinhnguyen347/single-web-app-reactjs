@@ -164,7 +164,7 @@ export default function GuestInfo({ returnToCart, goToPaymentInfo }) {
 
                   <div className="container-fluid mx-0 px-0 d-flex justify-content-between">
                     <button
-                      className="btn btn-light mt-4 me-2 text-secondary"
+                      className="btn btn-light mt-4 me-0 text-secondary"
                       onClick={() => {
                         returnToCart();
                         dispatch(shippingFeeToHome());
@@ -174,7 +174,7 @@ export default function GuestInfo({ returnToCart, goToPaymentInfo }) {
                     </button>
                     <button
                       type="submit"
-                      className="btn btn-primary mt-4 me-0 d-block"
+                      className="btn btn-primary mt-4 ms-0 d-block"
                       onClick={infoValidation}
                     >
                       Tới phương thức thanh&nbsp;toán
