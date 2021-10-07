@@ -1,13 +1,10 @@
 import { Link } from "react-router-dom";
-import { useDispatch } from "react-redux";
-import { updateCart } from "../../app/cartSlice";
 import vegetable from "./vegetable.gif";
 export default function FinishOrder() {
-  const dispatch = useDispatch();
 
-  function resetCart() {
-    window.localStorage.setItem("cart", "[]");
-  }
+function resetCart(){
+  window.localStorage.setItem("cart","[]");
+}
 
   return (
     <>
@@ -21,13 +18,7 @@ export default function FinishOrder() {
         <h3 className="text-center">Đặt hàng thành công!</h3>
         <p className="text-center">Cảm ơn bạn đã sử dụng dịch vụ của Yummy!</p>
         <Link to="/" exact className="text-decoration-none">
-          <button
-            className="btn btn-warning d-block mx-auto my-5"
-            onClick={() => {
-              resetCart();
-              dispatch(updateCart());
-            }}
-          >
+          <button className="btn btn-warning d-block mx-auto my-5">
             Trở về trang chủ
           </button>
         </Link>
