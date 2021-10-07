@@ -14,7 +14,7 @@ export default function ShoppingCart({ moveToShippingInfo }) {
   let list = [...addedList], vat, final_price, content;
 
   useEffect(() => {
-    let data = JSON.parse(window.localStorage.getItem("cart"));
+    let data = JSON.parse(localStorage.getItem("cart"));
     if (data.length === 0) {
       setHideDeleteAllBtn(true);
       setAddedList([]);
@@ -52,20 +52,20 @@ export default function ShoppingCart({ moveToShippingInfo }) {
     setAddedList([]);
     setMessage(false);
     setHideDeleteAllBtn(true);
-    window.localStorage.setItem("cart", "[]");
+    localStorage.setItem("cart", "[]");
   }
 
   function increase(id) {
     let index = list.findIndex((item) => item.id === id);
     list[index].amount = list[index].amount + 1;
-    window.localStorage.setItem("cart", JSON.stringify(list));
+    localStorage.setItem("cart", JSON.stringify(list));
     setAddedList(list);
   }
 
   function decrease(id) {
     let index = list.findIndex((item) => item.id === id);
     if (list[index].amount >= 2) list[index].amount = list[index].amount - 1;
-    window.localStorage.setItem("cart", JSON.stringify(list));
+    localStorage.setItem("cart", JSON.stringify(list));
     setAddedList(list);
   }
 
@@ -73,7 +73,7 @@ export default function ShoppingCart({ moveToShippingInfo }) {
     let index = list.findIndex((item) => item.id === id);
     list.splice(index, 1);
     if (list.length === 0) setHideDeleteAllBtn(true);
-    window.localStorage.setItem("cart", JSON.stringify(list));
+    localStorage.setItem("cart", JSON.stringify(list));
     setAddedList(list);
   }
 

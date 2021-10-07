@@ -32,7 +32,7 @@ export default function Combo() {
     }
     setAlertSuccess(true);
     timer.current = setTimeout(() => setAlertSuccess(false), 2000);
-    window.localStorage.setItem("cart", JSON.stringify(cart_current));
+    localStorage.setItem("cart", JSON.stringify(cart_current));
     let temp = [...comboTemp].map((item) => ({ ...item }));
     temp[index].amount = 0;
     setCombo(temp);

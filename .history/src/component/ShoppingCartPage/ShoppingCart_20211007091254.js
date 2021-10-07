@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Switch, Route, Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import ShoppingCartItem from "./ShoppingCartItem";
+import MainContent from "./ShoppingCartItem";
 import MenuPage from "../MenuPage/MenuPage";
 import { BsArrowReturnRight } from "react-icons/bs";
 import { updateBill, shippingFeeToHome } from "../../app/shippingFeeSlice";
@@ -14,7 +14,7 @@ export default function ShoppingCart({ moveToShippingInfo }) {
   let list = [...addedList], vat, final_price, content;
 
   useEffect(() => {
-    let data = JSON.parse(window.localStorage.getItem("cart"));
+    let data = JSON.parse(localStorage.getItem("cart"));
     if (data.length === 0) {
       setHideDeleteAllBtn(true);
       setAddedList([]);
@@ -52,20 +52,20 @@ export default function ShoppingCart({ moveToShippingInfo }) {
     setAddedList([]);
     setMessage(false);
     setHideDeleteAllBtn(true);
-    window.localStorage.setItem("cart", "[]");
+    localStorage.setItem("cart", "[]");
   }
 
   function increase(id) {
     let index = list.findIndex((item) => item.id === id);
     list[index].amount = list[index].amount + 1;
-    window.localStorage.setItem("cart", JSON.stringify(list));
+    localStorage.setItem("cart", JSON.stringify(list));
     setAddedList(list);
   }
 
   function decrease(id) {
     let index = list.findIndex((item) => item.id === id);
     if (list[index].amount >= 2) list[index].amount = list[index].amount - 1;
-    window.localStorage.setItem("cart", JSON.stringify(list));
+    localStorage.setItem("cart", JSON.stringify(list));
     setAddedList(list);
   }
 
@@ -73,7 +73,7 @@ export default function ShoppingCart({ moveToShippingInfo }) {
     let index = list.findIndex((item) => item.id === id);
     list.splice(index, 1);
     if (list.length === 0) setHideDeleteAllBtn(true);
-    window.localStorage.setItem("cart", JSON.stringify(list));
+    localStorage.setItem("cart", JSON.stringify(list));
     setAddedList(list);
   }
 

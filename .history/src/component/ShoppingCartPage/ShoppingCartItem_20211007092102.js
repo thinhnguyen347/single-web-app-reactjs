@@ -15,14 +15,14 @@ export default function ShoppingCartItem({
   dispatch
 }) {
   return (
-    <div className="container-fluid p-0 mb-3 ">
+    <div className="container-fluid p-0 mb-3">
       <div className="row row-cols-2 g-3">
         <div className="col-12 col-md-4 col-lg-2">
           <img src={img} alt="added-product" className="img-fluid rounded" />
         </div>
         <div className="col-12 col-md-8 col-lg-10 container-fluid position-relative">
           <div className="row row-cols-2">
-            <div className="col-12 col-md-12 col-lg-7">
+            <div className="col-12 col-md-12 col-lg-7 pe-0">
               <p className="h5 item-name text-left text-lg-start">{title}</p>
               <div className="spinbox d-flex mx-auto ms-lg-0">
                 <div className="border flex-fill text-center border-end-0 border-secondary rounded-start">
@@ -64,7 +64,7 @@ export default function ShoppingCartItem({
               
             </div>
             <button
-                className="btn-close position-absolute end-0 top-0 me-2 me-md-0 me-lg-0"
+                className="btn-close position-absolute end-0 top-0 p mb-5 me-2 me-md-1 me-lg-3"
                 onClick={(e) => {deleteItem(id, e); dispatch(updateCart())}}
               ></button>
           </div>

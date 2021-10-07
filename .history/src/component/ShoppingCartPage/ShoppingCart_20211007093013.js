@@ -58,14 +58,14 @@ export default function ShoppingCart({ moveToShippingInfo }) {
   function increase(id) {
     let index = list.findIndex((item) => item.id === id);
     list[index].amount = list[index].amount + 1;
-    window.localStorage.setItem("cart", JSON.stringify(list));
+    localStorage.setItem("cart", JSON.stringify(list));
     setAddedList(list);
   }
 
   function decrease(id) {
     let index = list.findIndex((item) => item.id === id);
     if (list[index].amount >= 2) list[index].amount = list[index].amount - 1;
-    window.localStorage.setItem("cart", JSON.stringify(list));
+    localStorage.setItem("cart", JSON.stringify(list));
     setAddedList(list);
   }
 
@@ -73,7 +73,7 @@ export default function ShoppingCart({ moveToShippingInfo }) {
     let index = list.findIndex((item) => item.id === id);
     list.splice(index, 1);
     if (list.length === 0) setHideDeleteAllBtn(true);
-    window.localStorage.setItem("cart", JSON.stringify(list));
+    localStorage.setItem("cart", JSON.stringify(list));
     setAddedList(list);
   }
 

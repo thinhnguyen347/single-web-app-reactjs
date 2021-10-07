@@ -73,7 +73,7 @@ export default function ShoppingCart({ moveToShippingInfo }) {
     let index = list.findIndex((item) => item.id === id);
     list.splice(index, 1);
     if (list.length === 0) setHideDeleteAllBtn(true);
-    window.localStorage.setItem("cart", JSON.stringify(list));
+    localStorage.setItem("cart", JSON.stringify(list));
     setAddedList(list);
   }
 
