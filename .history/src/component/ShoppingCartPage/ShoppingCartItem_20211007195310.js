@@ -24,7 +24,7 @@ export default function ShoppingCartItem({
         <div className="col-12 col-md-8 col-lg-10 container-fluid position-relative">
           <div className="row row-cols-2">
             <div className="col-12 col-md-12 col-lg-7">
-              <p className="h5 item-name text-left text-lg-start me-2 me-md-0">{title}</p>
+              <p className="h5 item-name text-left text-lg-start me-3 me-md-0">{title}</p>
               <div className="spinbox d-flex mx-auto ms-lg-0">
                 <div className="border flex-fill text-center border-end-0 border-secondary rounded-start">
                   <p className="fs-5 mb-0" onClick={(e) => decrease(id, e)}>

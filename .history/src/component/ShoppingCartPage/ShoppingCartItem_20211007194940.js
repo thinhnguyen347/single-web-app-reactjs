@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import {BiPlus} from "react-icons/bi";
 import {BiMinus} from "react-icons/bi";
 import { updateCart } from "../../app/cartSlice";
@@ -14,7 +14,7 @@ export default function ShoppingCartItem({
   deleteItem,
   dispatch
 }) {
-  const [alertSuccess, setAlertSuccess] = useState(false);
+  
   return (<>
     <div className="container-fluid p-0 mb-3 ">
       <div className="row row-cols-2 g-3">
@@ -24,7 +24,7 @@ export default function ShoppingCartItem({
         <div className="col-12 col-md-8 col-lg-10 container-fluid position-relative">
           <div className="row row-cols-2">
             <div className="col-12 col-md-12 col-lg-7">
-              <p className="h5 item-name text-left text-lg-start me-2 me-md-0">{title}</p>
+              <p className="h5 item-name text-left text-lg-start">{title}</p>
               <div className="spinbox d-flex mx-auto ms-lg-0">
                 <div className="border flex-fill text-center border-end-0 border-secondary rounded-start">
                   <p className="fs-5 mb-0" onClick={(e) => decrease(id, e)}>
@@ -66,7 +66,7 @@ export default function ShoppingCartItem({
             </div>
             <button
                 className="btn-close position-absolute end-0 top-0 me-2 me-md-0 me-lg-0"
-                onClick={(e) => {deleteItem(id, e); dispatch(updateCart()); setAlertSuccess(true)}}
+                onClick={(e) => {deleteItem(id, e); dispatch(updateCart())}}
               ></button>
           </div>
         </div>

@@ -69,6 +69,7 @@ export default function HomePage() {
           src="https://player.vimeo.com/video/625340003?autoplay=1&amp;loop=1&amp;autopause=0&amp;h=b677a81866&amp;badge=0&amp;player_id=0&amp;app_id=58479"
           frameBorder="0"
           allow="autoplay; fullscreen; picture-in-picture"
+          allowFullScreen
           title="Yummy"
         ></iframe>
       </div>

@@ -68,6 +68,7 @@ export default function ShoppingCart({ moveToShippingInfo }) {
     if (list[index].amount >= 2) list[index].amount = list[index].amount - 1;
     window.localStorage.setItem("cart", JSON.stringify(list));
     setAddedList(list);
+    setAlertSuccess(true);
   }
 
   function deleteItem(id) {
@@ -204,7 +205,7 @@ export default function ShoppingCart({ moveToShippingInfo }) {
           </div>
         </div>
       </section>
-
+      
       <Switch>
         <Route path="/menu">
           <MenuPage />

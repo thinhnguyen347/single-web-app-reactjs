@@ -53,8 +53,7 @@ export default function ShoppingCart({ moveToShippingInfo }) {
     window.localStorage.setItem("cart", "[]");
     setAddedList([]);
     setMessage(false);
-    setHideDeleteAllBtn(true);
-  }
+    setHideDeleteAllBtn(true);  }
 
   function increase(id) {
     let index = list.findIndex((item) => item.id === id);
@@ -68,6 +67,7 @@ export default function ShoppingCart({ moveToShippingInfo }) {
     if (list[index].amount >= 2) list[index].amount = list[index].amount - 1;
     window.localStorage.setItem("cart", JSON.stringify(list));
     setAddedList(list);
+    setAlertSuccess(true);
   }
 
   function deleteItem(id) {
@@ -204,7 +204,7 @@ export default function ShoppingCart({ moveToShippingInfo }) {
           </div>
         </div>
       </section>
-
+      
       <Switch>
         <Route path="/menu">
           <MenuPage />
