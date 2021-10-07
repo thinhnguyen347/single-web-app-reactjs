@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import CartSummary from "./CartSummary";
 import GuestInfo from "./GuestInfo";
 import PaymentInfo from "./PaymentInfo";
+
 import { useSelector } from "react-redux";
 
 export default function ShippingAndPayment({ returnToCart }) {
