@@ -170,14 +170,14 @@ export default function GuestInfo({ returnToCart, goToPaymentInfo }) {
                         dispatch(shippingFeeToHome());
                       }}
                     >
-                      Quay lại giỏ&nbsp;hàng
+                      Quay lại giỏ&nbsphàng
                     </button>
                     <button
                       type="submit"
                       className="btn btn-primary mt-4 me-0 d-block"
                       onClick={infoValidation}
                     >
-                      Tới phương thức thanh&nbsp;toán
+                      Tới phương thức thanh toán
                     </button>
                   </div>
                 </div>

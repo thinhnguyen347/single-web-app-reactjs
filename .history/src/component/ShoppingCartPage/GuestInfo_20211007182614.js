@@ -177,7 +177,7 @@ export default function GuestInfo({ returnToCart, goToPaymentInfo }) {
                       className="btn btn-primary mt-4 me-0 d-block"
                       onClick={infoValidation}
                     >
-                      Tới phương thức thanh&nbsp;toán
+                      Tới phương thức thanh toán
                     </button>
                   </div>
                 </div>
