@@ -226,11 +226,11 @@ footer .nav-link:hover {
 
 .alert {
   min-width: 250px;
-  transition: opacity .8s ease-in-out !important;
-  -webkit-transition: opacity .8s ease-in-out !important;
-  -moz-transition: opacity .8s ease-in-out !important;
-  -ms-transition: opacity .8s ease-in-out !important;
-  -o-transition: opacity .8s ease-in-out !important;
+  transition: 1s ease-in-out !important;
+  -webkit-transition:;
+  -moz-transition:;
+  -ms-transition:;
+  -o-transition:;
   z-index: 10;
 }
 
