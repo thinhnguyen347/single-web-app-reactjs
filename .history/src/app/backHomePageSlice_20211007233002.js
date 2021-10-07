@@ -10,9 +10,11 @@ export const backHomePageSlice = createSlice({
   reducers: {
     backHome: (state) => {
       state.status = true;
+      
     },
     resetBackHome: (state) => {
       state.status = false;
+    
     },
   },
 });
