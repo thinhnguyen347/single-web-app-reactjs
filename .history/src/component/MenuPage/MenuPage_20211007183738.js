@@ -408,7 +408,7 @@ export default function MenuPage() {
 
       <div
         className={`alert alert-primary text-center position-fixed start-50 translate-middle-x ${
-          alertSuccess ? "bottom-0 opacity-100" : "top-100 opacity-0"
+          alertSuccess ? "bottom-0 opacity-100" : "top-100 opacity-100"
         }`}
         role="alert"
       >
