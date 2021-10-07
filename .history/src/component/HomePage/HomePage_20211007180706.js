@@ -66,7 +66,7 @@ export default function HomePage() {
     <>
       <div className="video">
         <iframe
-          src="https://player.vimeo.com/video/625340003?autoplay=1&amp;loop=1&amp;h=b677a81866&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          src="https://player.vimeo.com/video/625340003?autoplay=1loop=1&amp;h=b677a81866&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
           frameborder="0"
           allow="autoplay; fullscreen; picture-in-picture"
           allowfullscreen
