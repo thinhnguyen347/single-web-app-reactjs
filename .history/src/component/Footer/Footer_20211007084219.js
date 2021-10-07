@@ -1,27 +1,28 @@
 import { Link } from "react-router-dom";
 import footerLogo from "./footer.png";
-import { BsEnvelope } from "react-icons/bs";
+import { FaRegEnvelope } from "react-icons/fa";
 
 export default function Footer() {
   return (
     <>
       <div className="newsletter container-fluid py-4 py-lg-5">
         <div className="row g-4 d-flex align-items-center justify-content-center">
-          <div className="col-12 col-sm-12 col-md-4 col-lg-3 d-flex align-items-center justify-content-center">
-            <div className="d-flex align-items-center">
-              <span className="d-block fs-4 pb-1">
-                <BsEnvelope />
+          <div className="col-12 col-sm-12 col-md-4 col-lg-2 d-flex align-items-center justify-content-center">
+            <div>
+            <span className="d-block fs-4">
+                <FaRegEnvelope />
               </span>
-              <label htmlFor="newsletter-email" className="d-block ms-3">
-                Đăng ký nhận&nbsp;tin
-              </label>
-            </div>
+            <label htmlFor="email" className="d-block">
+              
+              &nbsp;&nbsp;Đăng ký nhận&nbsp;tin
+            </label></div>
+
           </div>
           <div className="col-12 col-sm-12 col-md-6 col-lg-4 d-flex align-items-center justify-content-center">
             <input
               type="email"
-              id="newsletter-email"
-              className="flex-fill py-2 px-3 border-secondary border-1 border-end-0 border-start-0 border-top-0"
+              id="email"
+              className="flex-fill p-2 border-secondary border-1 border-end-0 border-start-0 border-top-0"
               placeholder="Nhập email của bạn..."
               name="contact"
               aria-label="Email Address"

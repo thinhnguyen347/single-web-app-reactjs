@@ -238,7 +238,6 @@ footer .nav-link:hover {
 }
 
 #newsletter-email:focus {
-  outline: none;
 }
 
 @media only screen and (max-width: 320px) {

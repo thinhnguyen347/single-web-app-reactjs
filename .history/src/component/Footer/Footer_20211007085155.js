@@ -21,7 +21,7 @@ export default function Footer() {
             <input
               type="email"
               id="newsletter-email"
-              className="flex-fill py-2 px-3 border-secondary border-1 border-end-0 border-start-0 border-top-0"
+              className="flex-fill p-2 border-secondary border-1 border-end-0 border-start-0 border-top-0"
               placeholder="Nhập email của bạn..."
               name="contact"
               aria-label="Email Address"

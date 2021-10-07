@@ -9,10 +9,10 @@ export default function Footer() {
         <div className="row g-4 d-flex align-items-center justify-content-center">
           <div className="col-12 col-sm-12 col-md-4 col-lg-3 d-flex align-items-center justify-content-center">
             <div className="d-flex align-items-center">
-              <span className="d-block fs-4 pb-1">
+              <span className="d-block fs-4 m-0 p-0">
                 <BsEnvelope />
               </span>
-              <label htmlFor="newsletter-email" className="d-block ms-3">
+              <label htmlFor="email" className="d-block ms-2">
                 Đăng ký nhận&nbsp;tin
               </label>
             </div>
@@ -20,8 +20,8 @@ export default function Footer() {
           <div className="col-12 col-sm-12 col-md-6 col-lg-4 d-flex align-items-center justify-content-center">
             <input
               type="email"
-              id="newsletter-email"
-              className="flex-fill py-2 px-3 border-secondary border-1 border-end-0 border-start-0 border-top-0"
+              id="email"
+              className="flex-fill p-2 border-secondary border-1 border-end-0 border-start-0 border-top-0"
               placeholder="Nhập email của bạn..."
               name="contact"
               aria-label="Email Address"
