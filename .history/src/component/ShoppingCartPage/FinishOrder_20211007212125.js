@@ -8,7 +8,7 @@ export default function FinishOrder() {
           src={vegetable}
           alt="success"
           width="100px"
-          className="d-block mx-auto mb-4"
+          className="d-block mx-auto mb-3"
         />
         <h3 className="text-center">Đặt hàng thành công!</h3>
         <p className="text-center">Cảm ơn bạn đã sử dụng dịch vụ của Yummy!</p>

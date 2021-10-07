@@ -8,9 +8,9 @@ export default function FinishOrder() {
           src={vegetable}
           alt="success"
           width="100px"
-          className="d-block mx-auto mb-4"
+          className="d-block mx-auto mb-5"
         />
-        <h3 className="text-center">Đặt hàng thành công!</h3>
+        <h3 className="text-center">Đặt hàng thành công!</h4>
         <p className="text-center">Cảm ơn bạn đã sử dụng dịch vụ của Yummy!</p>
         <Link to="/" exact className="text-decoration-none">
           <button className="btn btn-warning d-block mx-auto my-5">
