@@ -161,7 +161,7 @@ export default function ShippingAndPayment({ returnToCart }) {
               <hr />
               <div className="container-fluid mx-0 px-0 d-flex justify-content-between">
                 <span className="d-block">Tổng cộng:</span>
-                <span className="d-block h4 fw-bold text-danger">
+                <span className="d-block h4 fw-bold tẽt">
                   {final_price.toLocaleString("vi-VN", {
                     style: "currency",
                     currency: "VND",
