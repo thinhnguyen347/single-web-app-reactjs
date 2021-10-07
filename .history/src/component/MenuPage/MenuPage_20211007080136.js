@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { BrowserRouter as Switch, Route } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import FoodDetails from "./FoodDetails";
-import MenuProductItem from "./MenuProductItem";
+import MenuProductItem from "./MenuMainContent";
 import headerImg from "./menu-header.webp";
 
 export default function MenuPage() {
@@ -398,7 +398,7 @@ export default function MenuPage() {
       </section>
 
       <div
-        className={`alert alert-danger text-center position-fixed start-50 translate-middle-x ${
+        className={`alert alert-danger position-fixed start-50 translate-middle-x ${
           alertFail ? "bottom-0 opacity-100" : "top-100 opacity-100"
         }`}
         role="alert"
@@ -407,7 +407,7 @@ export default function MenuPage() {
       </div>
 
       <div
-        className={`alert alert-primary text-center position-fixed start-50 translate-middle-x ${
+        className={`alert alert-primary position-fixed start-50 translate-middle-x ${
           alertSuccess ? "bottom-0 opacity-100" : "top-100 opacity-100"
         }`}
         role="alert"

@@ -136,7 +136,7 @@ export default function ShoppingCart({ moveToShippingInfo }) {
               </button>
               <Link to="/menu" className="text-decoration-none">
                 <button
-                  className={`d-block mx-auto btn btn-primary mt-3 text-end ${
+                  className={` d-block mx-auto btn btn-primary mt-3 text-end ${
                     hideDeleteAllBtn ? "" : "d-none"
                   }`}
                 >
@@ -160,7 +160,7 @@ export default function ShoppingCart({ moveToShippingInfo }) {
                 </div>
                 <div className="d-flex flex-row flex-wrap justify-content-between align-items-center">
                   <p className="text-start text-secondary mb-0">Tổng tiền:</p>
-                  <p className="h3 text-end text-danger ms-auto me-0 mb-0">
+                  <p className="h3 text-end text-danger ms-2 mb-0">
                     {final_price.toLocaleString("vi-VN", {
                       style: "currency",
                       currency: "VND",

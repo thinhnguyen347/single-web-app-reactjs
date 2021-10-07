@@ -53,7 +53,7 @@ export default function Combo() {
               <div key={id} className="col-12 col-md-6 col-lg-4">
                 <div className="container px-0 border rounded overflow-hidden position-relative combo">
                   <img src={img} className="img-fluid" alt="combo" />
-                  <div className="tag border border-dark border-start-0 px-2 bg-warning position-absolute bottom-0">
+                  <div className="tag border border-dark px-2 bg-warning position-absolute bottom-0">
                     <p
                       className="btn m-0 fs-5 fw-bold text-dark"
                       onClick={(e) => {
@@ -70,14 +70,14 @@ export default function Combo() {
           </div>
         </div>
       )}
-      <div
-        className={`alert alert-primary text-center position-fixed start-50 translate-middle-x ${
+      <p
+        className={`alert text-center alert-primary position-fixed start-50 translate-middle-x ${
           alertSuccess ? "bottom-0 opacity-100" : "top-100 opacity-100"
         }`}
         role="alert"
       >
         Thêm vào giỏ thành&nbsp;công!
-      </div>
+      </p>
     </>
   );
 }

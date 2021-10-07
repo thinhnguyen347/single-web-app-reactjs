@@ -71,7 +71,7 @@ export default function Combo() {
         </div>
       )}
       <div
-        className={`alert alert-primary text-center position-fixed start-50 translate-middle-x ${
+        className={`alert text-center alert-primary position-fixed start-50 translate-middle-x ${
           alertSuccess ? "bottom-0 opacity-100" : "top-100 opacity-100"
         }`}
         role="alert"

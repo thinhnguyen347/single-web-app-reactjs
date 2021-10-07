@@ -24,7 +24,7 @@ export default function MainContent({
           <div className="row row-cols-2">
             <div className="col-12 col-lg-5 pe-0">
               <p className="h5 item-name text-left text-lg-start">{title}</p>
-              <div className="spinbox d-flex mx-auto ms-lg-0">
+              <div className="spinbox d-flex m-auto ms-lg-0">
                 <div className="border flex-fill text-center border-end-0 border-secondary rounded-start">
                   <p className="fs-5 mb-0" onClick={(e) => decrease(id, e)}>
                   <BiMinus/>

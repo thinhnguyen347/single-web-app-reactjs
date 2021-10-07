@@ -53,7 +53,7 @@ export default function MainContent({
             </div>
             <div className="col-6 col-md-6 col-lg-4 mt-3 ">
               <p className="m-0 text-center">Thành tiền</p>
-              <p className=" py-1 py-lg-2 text-center fw-bold">
+              <p className="h5 py-1 py-lg-2 text-center fw-bold">
                 <span className="price">
                   {(price * amount).toLocaleString("vi-VN", {
                     style: "currency",
@@ -64,7 +64,7 @@ export default function MainContent({
               
             </div>
             <button
-                className="btn-close position-absolute end-0 top-0 px-0 mb-5 me-2 me-md-1 me-lg-3"
+                className="btn-close position-absolute end-0 top-0 p-0 mt-0 me-2 me-md-1 me-lg-3"
                 onClick={(e) => {deleteItem(id, e); dispatch(updateCart())}}
               ></button>
           </div>
