@@ -59,21 +59,12 @@ export default function HomePage() {
       });
   }, []);
 
-  if (window.localStorage.getItem("cart") === null)
-    window.localStorage.setItem("cart", "[]");
+  if (window.localStorage.getItem("cart") === null) window.localStorage.setItem("cart", "[]");
 
   return (
     <>
-      <div className="video">
-        <iframe
-          src="https://player.vimeo.com/video/625340003?autoplay=1&amp;h=b677a81866&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-          frameborder="0"
-          allow="autoplay; fullscreen; picture-in-picture"
-          allowfullscreen
-          title="Yummy"
-        ></iframe>
-      </div>
-
+      <div className="video" style={padding:34.48% 0 0 0;position:relative;}><iframe src="https://player.vimeo.com/video/625340003?h=b677a81866&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Final_Scene_1"></iframe></div>
+      
       <div className="pb-3 overflow-hidden">
         <p className="h3 mt-5 py-3 text-center">BEST-SELLER CỦA THÁNG</p>
         {isLoading ? (

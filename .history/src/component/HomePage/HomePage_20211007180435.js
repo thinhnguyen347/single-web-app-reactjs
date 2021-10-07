@@ -70,7 +70,7 @@ export default function HomePage() {
           frameborder="0"
           allow="autoplay; fullscreen; picture-in-picture"
           allowfullscreen
-          title="Yummy"
+          title=""
         ></iframe>
       </div>
 
