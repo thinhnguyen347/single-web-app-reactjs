@@ -24,7 +24,7 @@ export default function ShoppingCartItem({
           <div className="col-12 col-md-8 col-lg-10 container-fluid position-relative">
             <div className="row row-cols-2">
               <div className="col-12 col-md-12 col-lg-7">
-                <p className="h5 item-name text-left text-lg-start me-2 me-md-3 me-lg-0">
+                <p className="h5 item-name text-left text-lg-start me-2 me-md-1 me-lg-0">
                   {title}
                 </p>
                 <div className="spinbox d-flex mx-auto ms-lg-0">
