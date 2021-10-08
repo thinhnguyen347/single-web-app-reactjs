@@ -36,7 +36,6 @@ export default function ShippingAndPayment({ returnToCart }) {
   }
 
   function salesOff(e) {
-    let timer;
     switch (e.target.value) {
       case "SALE10":
         setDiscount(0.1);
@@ -49,15 +48,9 @@ export default function ShippingAndPayment({ returnToCart }) {
         setShowCouponAlert(true);
         break;
       default:
-        if (e.target.value.trim("") !== "") {
-          clearTimeout(timer);
-          setDiscount(0);
-          setShowCouponAlert(true);
-          setCouponSuccess(false);
-          timer = setTimeout(() => {
-            setShowCouponAlert(false);
-          }, 2000);
-        }
+        setDiscount(0);
+        setShowCouponAlert(false);
+        setCouponSuccess(false);
         break;
     }
   }
@@ -137,7 +130,7 @@ export default function ShippingAndPayment({ returnToCart }) {
                     )}
                     {couponSuccess && showCouponAlert && (
                       <p className="m-0 pt-2 text-success text-center">
-                        Áp dụng mã thành công!
+                        Áp dụng mãthành công!
                       </p>
                     )}
                   </div>

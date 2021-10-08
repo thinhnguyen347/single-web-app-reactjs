@@ -49,7 +49,7 @@ export default function ShippingAndPayment({ returnToCart }) {
         setShowCouponAlert(true);
         break;
       default:
-        if (e.target.value.trim("") !== "") {
+        if (e.target.value.length !== "") {
           clearTimeout(timer);
           setDiscount(0);
           setShowCouponAlert(true);

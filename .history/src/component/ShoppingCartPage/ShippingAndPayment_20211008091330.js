@@ -36,7 +36,7 @@ export default function ShippingAndPayment({ returnToCart }) {
   }
 
   function salesOff(e) {
-    let timer;
+    let time
     switch (e.target.value) {
       case "SALE10":
         setDiscount(0.1);
@@ -49,15 +49,10 @@ export default function ShippingAndPayment({ returnToCart }) {
         setShowCouponAlert(true);
         break;
       default:
-        if (e.target.value.trim("") !== "") {
-          clearTimeout(timer);
-          setDiscount(0);
-          setShowCouponAlert(true);
-          setCouponSuccess(false);
-          timer = setTimeout(() => {
-            setShowCouponAlert(false);
-          }, 2000);
-        }
+        setDiscount(0);
+        setShowCouponAlert(true);
+        setCouponSuccess(false);
+        set
         break;
     }
   }

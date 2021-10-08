@@ -36,28 +36,16 @@ export default function ShippingAndPayment({ returnToCart }) {
   }
 
   function salesOff(e) {
-    let timer;
     switch (e.target.value) {
       case "SALE10":
         setDiscount(0.1);
-        setCouponSuccess(true);
-        setShowCouponAlert(true);
+        setCouponSuccess
         break;
       case "SALE15":
         setDiscount(0.15);
-        setCouponSuccess(true);
-        setShowCouponAlert(true);
         break;
       default:
-        if (e.target.value.trim("") !== "") {
-          clearTimeout(timer);
-          setDiscount(0);
-          setShowCouponAlert(true);
-          setCouponSuccess(false);
-          timer = setTimeout(() => {
-            setShowCouponAlert(false);
-          }, 2000);
-        }
+        setDiscount(0);
         break;
     }
   }
@@ -130,16 +118,7 @@ export default function ShippingAndPayment({ returnToCart }) {
                       placeholder="Nhập mã giảm giá..."
                       onChange={(e) => salesOff(e)}
                     />
-                    {!couponSuccess && showCouponAlert && (
-                      <p className="m-0 pt-2 text-danger text-center">
-                        Mã giảm giá không tồn tại!
-                      </p>
-                    )}
-                    {couponSuccess && showCouponAlert && (
-                      <p className="m-0 pt-2 text-success text-center">
-                        Áp dụng mã thành công!
-                      </p>
-                    )}
+                    <p className="m-0 pt-2 text-danger text-center">Mã giảm giá không tồn tại!</p>
                   </div>
                 </div>
               </div>

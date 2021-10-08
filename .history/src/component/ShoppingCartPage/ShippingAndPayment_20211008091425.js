@@ -49,15 +49,12 @@ export default function ShippingAndPayment({ returnToCart }) {
         setShowCouponAlert(true);
         break;
       default:
-        if (e.target.value.trim("") !== "") {
-          clearTimeout(timer);
-          setDiscount(0);
-          setShowCouponAlert(true);
-          setCouponSuccess(false);
-          timer = setTimeout(() => {
-            setShowCouponAlert(false);
-          }, 2000);
-        }
+        setDiscount(0);
+        setShowCouponAlert(true);
+        setCouponSuccess(false);
+        time = setTimeout(() => {
+          
+        }, 2000);
         break;
     }
   }
