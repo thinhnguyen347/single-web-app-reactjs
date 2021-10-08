@@ -15,7 +15,7 @@ export default function FoodDetails() {
   const [item, setItem] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [alertSuccess, setAlertSuccess] = useState(false);
-  let timer = useRef(), temp = {...item};
+  let timer = useRef(), temp = [{}...item];
   let { slug, id } = useParams();
 
   useEffect(() => {

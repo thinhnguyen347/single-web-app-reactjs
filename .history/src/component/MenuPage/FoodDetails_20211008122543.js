@@ -10,12 +10,12 @@ import { updateCart } from "../../app/cartSlice";
 import MenuPage from "./MenuPage";
 import RecommendCarousel from "./RecommendCarousel";
 
-export default function FoodDetails() {
+export default function FoodDetails({ list }) {
   const dispatch = useDispatch();
   const [item, setItem] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [alertSuccess, setAlertSuccess] = useState(false);
-  let timer = useRef(), temp = {...item};
+  let timer = useRef();
   let { slug, id } = useParams();
 
   useEffect(() => {
@@ -30,18 +30,15 @@ export default function FoodDetails() {
   function addToList(id) {
     clearTimeout(timer.current);
     let cart_current = JSON.parse(window.localStorage.getItem("cart"));
-    let index = cart_current.findIndex((item) => item.id === id);
-    if (index < 0) {
-      temp.amount = 1;
-      cart_current.push(temp);
+    let index1 = cart_current.findIndex((item) => item.id === id);
+    if (index1 < 0) {
+      cart_current.push(item);
     } else {
-      cart_current[index].amount += 1;
+      cart_current[index1].amount += 1;
     }
-    
-    window.localStorage.setItem("cart", JSON.stringify(cart_current));
-
     setAlertSuccess(true);
     timer.current = setTimeout(() => setAlertSuccess(false), 2000);
+    window.localStorage.setItem("cart", JSON.stringify(cart_current));
   }
 
   return (

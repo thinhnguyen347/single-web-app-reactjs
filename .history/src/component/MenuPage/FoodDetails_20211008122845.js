@@ -10,12 +10,12 @@ import { updateCart } from "../../app/cartSlice";
 import MenuPage from "./MenuPage";
 import RecommendCarousel from "./RecommendCarousel";
 
-export default function FoodDetails() {
+export default function FoodDetails({ list }) {
   const dispatch = useDispatch();
   const [item, setItem] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [alertSuccess, setAlertSuccess] = useState(false);
-  let timer = useRef(), temp = {...item};
+  let timer = useRef(), temp = {...item}
   let { slug, id } = useParams();
 
   useEffect(() => {

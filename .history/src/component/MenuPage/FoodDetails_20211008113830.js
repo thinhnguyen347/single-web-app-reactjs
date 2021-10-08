@@ -1,21 +1,17 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import {
   BrowserRouter as Switch,
   Route,
   Link,
   useParams,
 } from "react-router-dom";
-import { useDispatch } from "react-redux";
-import { updateCart } from "../../app/cartSlice";
 import MenuPage from "./MenuPage";
 import RecommendCarousel from "./RecommendCarousel";
 
 export default function FoodDetails() {
-  const dispatch = useDispatch();
   const [item, setItem] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-  const [alertSuccess, setAlertSuccess] = useState(false);
-  let timer = useRef(), temp = {...item};
+
   let { slug, id } = useParams();
 
   useEffect(() => {
@@ -26,23 +22,6 @@ export default function FoodDetails() {
         setIsLoading(false);
       });
   }, [id]);
-
-  function addToList(id) {
-    clearTimeout(timer.current);
-    let cart_current = JSON.parse(window.localStorage.getItem("cart"));
-    let index = cart_current.findIndex((item) => item.id === id);
-    if (index < 0) {
-      temp.amount = 1;
-      cart_current.push(temp);
-    } else {
-      cart_current[index].amount += 1;
-    }
-    
-    window.localStorage.setItem("cart", JSON.stringify(cart_current));
-
-    setAlertSuccess(true);
-    timer.current = setTimeout(() => setAlertSuccess(false), 2000);
-  }
 
   return (
     <>
@@ -71,6 +50,9 @@ export default function FoodDetails() {
                   currency: "VND",
                 })}
               </p>
+              <div>
+                
+              </div>
 
               <h5 className="fw-bold py-2">Nguyên liệu:</h5>
               <p>
@@ -86,37 +68,17 @@ export default function FoodDetails() {
                 <li>Ea dolore in deserunt elit&nbsp;deserunt.</li>
                 <li>Ea dolore in deserunt elit&nbsp;deserunt.</li>
               </ul>
-              <div className="d-flex justify-content-between justify-content-lg-around">
-                <button
-                  className="btn btn-warning my-5 d-block"
-                  onClick={(e) => {
-                    addToList(id, e);
-                    dispatch(updateCart());
-                  }}
-                >
-                  Cho vào giỏ&nbsp;hàng
+              <Link to="/menu">
+                <button className="btn btn-primary my-5 d-block mx-auto">
+                  Về thực đơn
                 </button>
-                <Link to="/menu">
-                  <button className="btn btn-primary my-5 d-block">
-                    Về thực đơn
-                  </button>
-                </Link>
-              </div>
+              </Link>
             </div>
           </div>
         </div>
       )}
 
       <RecommendCarousel />
-
-      <div
-        className={`alert alert-primary text-center position-fixed start-50 translate-middle-x ${
-          alertSuccess ? "opacity-100 active" : "opacity-0"
-        }`}
-        role="alert"
-      >
-        Thêm vào giỏ thành&nbsp;công!
-      </div>
 
       <Switch>
         <Route path="/menu" exact>

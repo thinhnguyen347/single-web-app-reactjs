@@ -10,12 +10,12 @@ import { updateCart } from "../../app/cartSlice";
 import MenuPage from "./MenuPage";
 import RecommendCarousel from "./RecommendCarousel";
 
-export default function FoodDetails() {
+export default function FoodDetails({list}) {
   const dispatch = useDispatch();
   const [item, setItem] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [alertSuccess, setAlertSuccess] = useState(false);
-  let timer = useRef(), temp = {...item};
+  let timer = useRef();
   let { slug, id } = useParams();
 
   useEffect(() => {
@@ -29,19 +29,20 @@ export default function FoodDetails() {
 
   function addToList(id) {
     clearTimeout(timer.current);
+    let index = list.findIndex((item) => item.id === id);
     let cart_current = JSON.parse(window.localStorage.getItem("cart"));
-    let index = cart_current.findIndex((item) => item.id === id);
-    if (index < 0) {
-      temp.amount = 1;
-      cart_current.push(temp);
+    let index1 = cart_current.findIndex((item) => item.id === list[index].id);
+    if (index1 < 0) {
+      cart_current.push(list[index]);
     } else {
-      cart_current[index].amount += 1;
+      cart_current[index1].amount += 1;
     }
-    
-    window.localStorage.setItem("cart", JSON.stringify(cart_current));
-
     setAlertSuccess(true);
     timer.current = setTimeout(() => setAlertSuccess(false), 2000);
+    window.localStorage.setItem("cart", JSON.stringify(cart_current));
+   //let temp = [...comboTemp].map((item) => ({ ...item }));
+    //temp[index].amount = 0;
+    //setCombo(temp);
   }
 
   return (
@@ -87,14 +88,8 @@ export default function FoodDetails() {
                 <li>Ea dolore in deserunt elit&nbsp;deserunt.</li>
               </ul>
               <div className="d-flex justify-content-between justify-content-lg-around">
-                <button
-                  className="btn btn-warning my-5 d-block"
-                  onClick={(e) => {
-                    addToList(id, e);
-                    dispatch(updateCart());
-                  }}
-                >
-                  Cho vào giỏ&nbsp;hàng
+                <button className="btn btn-warning my-5 d-block">
+                  Cho vào giỏ hàng
                 </button>
                 <Link to="/menu">
                   <button className="btn btn-primary my-5 d-block">

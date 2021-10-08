@@ -418,7 +418,7 @@ export default function MenuPage() {
 
       <Switch>
         <Route path="/menu/:slug/:id">
-          <FoodDetails />
+          <FoodDetails list = {list}/>
         </Route>
       </Switch>
     </>
