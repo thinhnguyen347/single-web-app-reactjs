@@ -88,7 +88,7 @@ export default function FoodDetails() {
               </ul>
               <div className="d-flex justify-content-between justify-content-lg-around">
                 <button
-                  className="btn btn-warning my-5 me-3 d-block"
+                  className="btn btn-warning my-5 me-3git status d-block"
                   onClick={(e) => {
                     addToList(id, e);
                     dispatch(updateCart());
