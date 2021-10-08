@@ -90,7 +90,7 @@ export default function FoodDetails() {
               <div className="d-flex justify-content-between justify-content-lg-around">
                 
                 <Link to="/menu" className="text-decoration-none">
-                  <button className="btn btn-primary my-5 d-block me-3">
+                  <button className="btn btn-primary my-5 me-3 d-block">
                    Quay về thực đơn
                   </button>
                 </Link>
