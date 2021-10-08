@@ -1,7 +1,7 @@
 import contactImg from "./contact.webp";
 
 export default function ContactPage() {
-  window.scroll(0, 0);
+  
   return (
     <div className="container py-5 my-5">
       <div className="row row-cols-lg-2">

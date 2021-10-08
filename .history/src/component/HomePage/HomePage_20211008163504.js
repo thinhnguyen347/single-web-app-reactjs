@@ -62,7 +62,6 @@ export default function HomePage() {
   if (window.localStorage.getItem("cart") === null)
     window.localStorage.setItem("cart", "[]");
   window.scroll(0, 0);
-  
   return (
     <>
       <div className="video">

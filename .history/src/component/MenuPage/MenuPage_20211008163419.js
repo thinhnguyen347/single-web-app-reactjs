@@ -19,7 +19,7 @@ export default function MenuPage() {
 
   let timer = useRef(),
     searchResult = useRef();
-  window.scroll(0, 0);
+    window.scroll(0, 0);
   let list = [...products];
   const cloneList = products.map((item) => ({ ...item }));
 
@@ -114,7 +114,7 @@ export default function MenuPage() {
     let cart_current = JSON.parse(localStorage.getItem("cart"));
 
     let index1 = cart_current.findIndex((item) => item.id === list[index].id);
-
+    
     if (index1 < 0) {
       cart_current.push(list[index]);
     } else {
