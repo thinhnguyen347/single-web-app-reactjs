@@ -75,6 +75,7 @@ export default function PaymentInfo({ returnToGuestInfo }) {
             onClick={() => {
               resetCart();
               dispatch(backHome());
+
               dispatch(updateCart());
             }}
           >

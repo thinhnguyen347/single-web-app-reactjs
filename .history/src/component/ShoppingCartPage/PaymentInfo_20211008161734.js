@@ -7,10 +7,6 @@ export default function PaymentInfo({ returnToGuestInfo }) {
   const dispatch = useDispatch();
   const [onlinePayment, setOnlinePayment] = useState(false);
 
-  function resetCart() {
-    window.localStorage.setItem("cart", "[]");
-  }
-
   return (
     <>
       <div className="section">
@@ -73,9 +69,7 @@ export default function PaymentInfo({ returnToGuestInfo }) {
           <button
             className="btn btn-primary mt-4 me-0 d-block"
             onClick={() => {
-              resetCart();
               dispatch(backHome());
-              dispatch(updateCart());
             }}
           >
             Hoàn thành đơn hàng

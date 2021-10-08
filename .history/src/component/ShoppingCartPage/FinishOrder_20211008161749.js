@@ -1,6 +1,12 @@
 import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { updateCart } from "../../app/cartSlice";
 import vegetable from "./vegetable.gif";
 export default function FinishOrder() {
+  
+  function resetCart() {
+    window.localStorage.setItem("cart", "[]");
+  }
 
   return (
     <>
@@ -16,7 +22,10 @@ export default function FinishOrder() {
         <Link to="/" exact className="text-decoration-none">
           <button
             className="btn btn-warning d-block mx-auto my-5"
-           
+            onClick={() => {
+              resetCart();
+              dispatch(updateCart());
+            }}
           >
             Trở về trang chủ
           </button>

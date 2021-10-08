@@ -16,7 +16,10 @@ export default function FinishOrder() {
         <Link to="/" exact className="text-decoration-none">
           <button
             className="btn btn-warning d-block mx-auto my-5"
-           
+            onClick={() => {
+              resetCart();
+              dispatch(updateCart());
+            }}
           >
             Trở về trang chủ
           </button>

@@ -73,9 +73,7 @@ export default function PaymentInfo({ returnToGuestInfo }) {
           <button
             className="btn btn-primary mt-4 me-0 d-block"
             onClick={() => {
-              resetCart();
-              dispatch(backHome());
-              dispatch(updateCart());
+              dispatch(backHome()); 
             }}
           >
             Hoàn thành đơn hàng
