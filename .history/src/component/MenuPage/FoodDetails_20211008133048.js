@@ -31,7 +31,6 @@ export default function FoodDetails() {
     clearTimeout(timer.current);
     let cart_current = JSON.parse(window.localStorage.getItem("cart"));
     let index = cart_current.findIndex((item) => item.id === id);
-    console.log(index)
     if (index < 0) {
       temp.amount = 1;
       cart_current.push(temp);
@@ -90,7 +89,7 @@ export default function FoodDetails() {
               <div className="d-flex justify-content-between justify-content-lg-around">
                 
                 <Link to="/menu" className="text-decoration-none">
-                  <button className="btn btn-primary my-5 d-block">
+                  <button className="btn btn-secondary my-5 d-block">
                    Quay về thực đơn
                   </button>
                 </Link>
@@ -98,7 +97,7 @@ export default function FoodDetails() {
                 <button
                   className="btn btn-warning my-5 me-3 d-block"
                   onClick={(e) => {
-                    addToList(item.id, e);
+                    addToList(id, e);
                     dispatch(updateCart());
                   }}
                 >

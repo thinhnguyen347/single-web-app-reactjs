@@ -31,7 +31,6 @@ export default function FoodDetails() {
     clearTimeout(timer.current);
     let cart_current = JSON.parse(window.localStorage.getItem("cart"));
     let index = cart_current.findIndex((item) => item.id === id);
-    console.log(index)
     if (index < 0) {
       temp.amount = 1;
       cart_current.push(temp);
@@ -98,7 +97,7 @@ export default function FoodDetails() {
                 <button
                   className="btn btn-warning my-5 me-3 d-block"
                   onClick={(e) => {
-                    addToList(item.id, e);
+                    addToList(id, e);
                     dispatch(updateCart());
                   }}
                 >

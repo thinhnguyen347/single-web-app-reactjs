@@ -415,6 +415,12 @@ export default function MenuPage() {
       >
         Thêm vào giỏ thành công!
       </div>
+
+      {/* <Switch>
+        <Route path="/menu/:slug/:id">
+          <FoodDetails />
+        </Route>
+      </Switch> */}
     </>
   );
 }

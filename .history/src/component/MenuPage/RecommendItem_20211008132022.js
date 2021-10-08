@@ -15,9 +15,9 @@ export default function RecommendItem({ img, title, price, slug, id, unit }) {
             })}
             /{unit}
           </p>
-          <Link to={`/menu/${slug}/${id}`} className="text-decoration-none">
+          <Link to={`/menu/${slug}/${id}`}>
             <p
-              className="btn btn-outline-primary w-100 mt-3 my-0"
+              className="btn btn-info w-100 fw-bold mt-3 my-0"
               onClick={() => window.scroll(0, 0)}
             >
               Xem chi tiết

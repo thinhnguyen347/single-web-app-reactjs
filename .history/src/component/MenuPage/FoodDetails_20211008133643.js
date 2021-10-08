@@ -98,7 +98,7 @@ export default function FoodDetails() {
                 <button
                   className="btn btn-warning my-5 me-3 d-block"
                   onClick={(e) => {
-                    addToList(item.id, e);
+                    addToList(id, e);
                     dispatch(updateCart());
                   }}
                 >

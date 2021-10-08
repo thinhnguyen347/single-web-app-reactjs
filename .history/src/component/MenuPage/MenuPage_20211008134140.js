@@ -415,6 +415,7 @@ export default function MenuPage() {
       >
         Thêm vào giỏ thành công!
       </div>
+
     </>
   );
 }
