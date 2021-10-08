@@ -16,7 +16,7 @@ export default function Combo() {
       .then((res) => res.json())
       .then((result) => {
         setCombo(result);
-        console.log(result)
+        
         setIsLoading(false);
       });
   }, []);
@@ -29,7 +29,7 @@ export default function Combo() {
     if (index1 < 0) {
       cart_current.push(comboTemp[index]);
     } else {
-      cart_current[index1].amount += 1;
+      cart_current[index1].amount += comboTemp[index].amount;
     }
     setAlertSuccess(true);
     timer.current = setTimeout(() => setAlertSuccess(false), 2000);
