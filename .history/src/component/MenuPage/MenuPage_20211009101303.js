@@ -19,6 +19,7 @@ export default function MenuPage() {
 
   let timer = useRef(),
     searchResult = useRef();
+  
   let list = [...products];
   const cloneList = products.map((item) => ({ ...item }));
 
@@ -49,10 +50,6 @@ export default function MenuPage() {
           setIsLoading(false);
         });
   }, [keyword, currentPage, isSearching]);
-
-  useEffect(() => {
-    window.scroll(0, 0);
-  }, []);
 
   function increase(id) {
     let index = list.findIndex((item) => item.id === id);

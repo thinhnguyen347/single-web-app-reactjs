@@ -50,9 +50,7 @@ export default function MenuPage() {
         });
   }, [keyword, currentPage, isSearching]);
 
-  useEffect(() => {
-    window.scroll(0, 0);
-  }, []);
+  use
 
   function increase(id) {
     let index = list.findIndex((item) => item.id === id);
