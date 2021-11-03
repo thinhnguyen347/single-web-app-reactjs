@@ -7,6 +7,7 @@ import { BsArrowReturnRight } from "react-icons/bs";
 import { updateBill, shippingFeeToHome } from "../../app/shippingFeeSlice";
 import { updateCart } from "../../app/cartSlice";
 
+
 export default function ShoppingCart({ moveToShippingInfo }) {
   const dispatch = useDispatch();
   const [addedList, setAddedList] = useState([]);

@@ -5,7 +5,6 @@ import ShoppingCartItem from "./ShoppingCartItem";
 import MenuPage from "../MenuPage/MenuPage";
 import { BsArrowReturnRight } from "react-icons/bs";
 import { updateBill, shippingFeeToHome } from "../../app/shippingFeeSlice";
-import { updateCart } from "../../app/cartSlice";
 
 export default function ShoppingCart({ moveToShippingInfo }) {
   const dispatch = useDispatch();
@@ -136,7 +135,7 @@ export default function ShoppingCart({ moveToShippingInfo }) {
                 className={`btn btn-light text-decoration-underline mt-3 text-end ${
                   hideDeleteAllBtn ? "d-none" : ""
                 } ${addedList.length <= 0 ? "d-none" : ""}`}
-                onClick={()=>{deleteAll(); dispatch(updateCart());}}
+                onClick={()=>{deleteAll, }
               >
                 Xoá hết
               </button>
